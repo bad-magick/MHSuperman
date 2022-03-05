@@ -1,0 +1,35 @@
+allow for reflection.
+-- when a control/form is loaded, make sure we can load properties about itself or children of it
+
+-- this should be more general - need to insert/update anything here- anything related to resizing/control details/control properties etc.
+
+
+we need to be able to interact with the vc 2005 gui
+
+-- about events
+  - need to figure out the events (this should be easy - a form, the form's events)
+  - need to figure out notifications (see its children)
+  
+
+-- for each form/control
+ - see its type
+ - we might have extra properties for a form/control
+   - at least, more user-friendly
+   - like, some control's background, etc.
+   - these need to be kept somewhere
+     - also, it should be loaded and processed at runtime
+     
+     
+     
+     
+- see where i wrote about "configure"
+  - i need to have sections like "resize { ... } props { ... } " 
+  - within "resize" for instance, I can have things like username.x = passw.x;
+    username & passw -> identify controls by _form_resource() . -> each control has 2 things: a name ("username") an id( IDC_username for instance)
+    this way i can match a string to an id, within a form.    
+     
+     
+- existing properties should be reflectable.
+     
+     
+     

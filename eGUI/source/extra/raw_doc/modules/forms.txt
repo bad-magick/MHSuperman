@@ -1,0 +1,81 @@
+THIS IS A MODULE
+
+allow easy access to a form's controls - if they refer to something that is already on the Resource Editor
+
+most likely we'll have some resource splitter
+
+
+
+
+
+
+
+HANDLE COMMANDS/NOTIFICATIONS
+First of all, you CAN have
+void on_button_pressed(button_pressed &b, ok_ ) {}
+
+// use 'notify_from' so I can easily parse this file!
+
+you'll include
+#include "<dlgname>_form_resource.hpp"
+
+// form derives from handle_events::form
+struct login_dlg : form, private form_resource::login {
+};
+
+form_resource::login will contain all children for this dialog :
+struct form_resource::login {
+   login() {
+     ... initialize username,passw,ok,cancel
+     // what i will actually do is create a simple function in here, with the same prototype, but make it virtual
+     // then, have a different function which i register as handler , which has an "if event.from() == ok { on_button_pressed(event,notify_from<ok>) ; }
+         // all these functions will be PROTECTED
+     ... also, need to register all handlers like on_button_pressed(button_pressed&, notify_from<ok> ) {}
+   }
+   // for each control, have a typedef
+   // username -> username_
+   // ok -> ok_
+   // etc.
+   wnd<edit> username;
+   wnd<edit> passw;
+   wnd<button> ok, cancel;
+};
+---------> this form_res/<dlgname>.hpp is updated only if control type changes, control is deleted , or control is added.
+
+
+HAVE A FUNCTION: on_pre_create - where i register all events from form_resource::login
+-> also this is an internal function, where controls can do extra setup before on_create is called.
+
+
+
+FIXME how do i deal with ActiveX stuff? TOTHINK
+
+
+call it both form and dialog.
+typedef form dialog;
+
+
+creation of a modal dialog = same as modeless - it's just one extra flag that can only be set at construction.
+
+
+
+
+FIXME -- basically, if someone wants to setup other properties at design time, it'll have to pay.
+that is, I'll create an extra add-in which will allow for that -> the easiest way for this is to
+allow each control to have a virtual method called "configure(string)".
+Then, allow setting properties at design time through some resource editor. then store that info in a simple string format and keep it in the resource.
+then, we'll simply load that string resource, and set everything at loading.
+
+
+
+---> have wizard that generates <dlgname>_form_resource.hpp header, dlgname.hpp header and dlgname.cpp file (as shown in article)
+also, besides having #pragma once, have UNIQUE #ifdefs as well
+
+
+
+
+
+
+What if i have my cool_button class and want to use it on a form
+(in win32gui – i named the control like this “username_typeis_cool_button”)
+

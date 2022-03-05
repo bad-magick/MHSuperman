@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="_template">
+      <UniqueIdentifier>{d12a8e0c-17c1-4af1-9995-706e2535c82b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_doc">
+      <UniqueIdentifier>{a7ad44fe-4146-4690-ae99-3f20d305adf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_doc\_important">
+      <UniqueIdentifier>{3c5827a6-df43-4dea-9043-740fcdda2d20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_doc\modules">
+      <UniqueIdentifier>{c2180aae-394d-4783-afb6-61d2f8355bd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{73284f9e-c471-49ee-a360-318d06106b48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="detail">
+      <UniqueIdentifier>{af80d8da-170c-4127-9d74-141de4ac2f61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="detail\win32">
+      <UniqueIdentifier>{4283791b-7347-408b-8237-bcce7bcd480e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="detail\types">
+      <UniqueIdentifier>{88539725-1fbd-4bbf-89ba-eae3f6e4e0c3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="detail\template.hpp">
+      <Filter>_template</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\extra\raw_doc\changelog.hpp">
+      <Filter>_doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\extra\raw_doc\goals.hpp">
+      <Filter>_doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\extra\raw_doc\main.hpp">
+      <Filter>_doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\extra\raw_doc\plan.hpp">
+      <Filter>_doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\extra\raw_doc\requirements.hpp">
+      <Filter>_doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\extra\raw_doc\table_of_contents.hpp">
+      <Filter>_doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\extra\raw_doc\template.hpp">
+      <Filter>_doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\extra\raw_doc\to_care_about.hpp">
+      <Filter>_doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\extra\raw_doc\todo.hpp">
+      <Filter>_doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\extra\raw_doc\tutorial.hpp">
+      <Filter>_doc</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\building_egui.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\building_egui\commctrl_constants.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\critical_section.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\event.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\event_handler.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\building_egui\event_manager.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\exception.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\forms\detail\form_event.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\handle_all_events.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\handle_event_base.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\line_related.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\log.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\msg_box.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\new_del.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\property.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx_core.h">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\types.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\util.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\window_manager.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\building_egui\wnd_msg.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\building_egui\wrap_events.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\raw.hpp">
+      <Filter>detail\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\types\bitmap.hpp">
+      <Filter>detail\types</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\types\brush.hpp">
+      <Filter>detail\types</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\types\font.hpp">
+      <Filter>detail\types</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\types\icon.hpp">
+      <Filter>detail\types</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\types\image_list.hpp">
+      <Filter>detail\types</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\types\pen.hpp">
+      <Filter>detail\types</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\types\resource.hpp">
+      <Filter>detail\types</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\control.hpp" />
+    <ClInclude Include="detail\form.hpp" />
+    <ClInclude Include="detail\fwd.hpp" />
+    <ClInclude Include="detail\window_base.hpp" />
+    <ClInclude Include="wnd.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\source\extra\raw_doc\macros.txt">
+      <Filter>_doc</Filter>
+    </Text>
+    <Text Include="..\source\extra\raw_doc\modules\_the structure.txt">
+      <Filter>_doc\modules</Filter>
+    </Text>
+    <Text Include="..\source\extra\raw_doc\modules\activex.txt">
+      <Filter>_doc\modules</Filter>
+    </Text>
+    <Text Include="..\source\extra\raw_doc\modules\controls.txt">
+      <Filter>_doc\modules</Filter>
+    </Text>
+    <Text Include="..\source\extra\raw_doc\modules\controls_v9.txt">
+      <Filter>_doc\modules</Filter>
+    </Text>
+    <Text Include="..\source\extra\raw_doc\modules\core.txt">
+      <Filter>_doc\modules</Filter>
+    </Text>
+    <Text Include="..\source\extra\raw_doc\modules\events.txt">
+      <Filter>_doc\modules</Filter>
+    </Text>
+    <Text Include="..\source\extra\raw_doc\modules\forms.txt">
+      <Filter>_doc\modules</Filter>
+    </Text>
+    <Text Include="..\source\extra\raw_doc\modules\menus.txt">
+      <Filter>_doc\modules</Filter>
+    </Text>
+    <Text Include="..\source\extra\raw_doc\modules\parsing windows files.txt">
+      <Filter>_doc\modules</Filter>
+    </Text>
+    <Text Include="..\source\extra\raw_doc\modules\readme.txt">
+      <Filter>_doc\modules</Filter>
+    </Text>
+    <Text Include="..\source\extra\raw_doc\modules\reflection.txt">
+      <Filter>_doc\modules</Filter>
+    </Text>
+    <Text Include="..\source\extra\raw_doc\modules\resize.txt">
+      <Filter>_doc\modules</Filter>
+    </Text>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\core\commctrl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\core\critical_section.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\core\event.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\core\event_manager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\core\form.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\core\handle_all_events.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\core\line_related.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\core\log.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\core\resource.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\core\template.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\core\util.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\core\window_base.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\core\window_manager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+</Project>

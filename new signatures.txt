@@ -1,0 +1,45 @@
+CEBN.Init((unsigned char*)"\x51\x56\x8b\x74\x24\x10\x57\x8b\x7c\x24\x10\x83\xfe\xff\x74\x00\x8b\x0d\x00\x00\x00\x00\x8b\x01\x8b\x50\x58\x56\xff\xd2","xxxxxxxxxxxxxxx?xx????xxxxxxxx",30);
+ DS.Init((unsigned char*)"\x53\x55\x56\x8b\x74\x24\x10\x57\x85\xf6\x0f\x84\x43\x01\x00\x00","xxxxxxxxxxxxxxxx",16);
+
+
+BOOL APIENTRY DllMain( HMODULE hModule,
+                       DWORD  ul_reason_for_call,
+                       LPVOID lpReserved
+					 )
+{
+	switch (ul_reason_for_call)
+	{
+	case DLL_PROCESS_ATTACH:
+		GetInterfaces();
+		CreateThread(0,0,(LPTHREAD_START_ROUTINE)Init,0,0,0);
+	case DLL_THREAD_ATTACH:
+	case DLL_THREAD_DETACH:
+	case DLL_PROCESS_DETACH:
+		break;
+	}
+	return TRUE;
+}
+
+void GetInterfaces()
+{
+	CreateInterfaceFn intf_client = (CreateInterfaceFn)GetProcAddress(GetModuleHandle("client.dll"), "CreateInterface");
+	CreateInterfaceFn intf_engine = (CreateInterfaceFn)GetProcAddress(GetModuleHandle("engine.dll"), "CreateInterface");
+	CreateInterfaceFn intf_server = (CreateInterfaceFn)GetProcAddress(GetModuleHandle("server.dll"), "CreateInterface");
+	CreateInterfaceFn intf_vstd = (CreateInterfaceFn)GetProcAddress(GetModuleHandle("vstdlib.dll"), "CreateInterface");
+	CreateInterfaceFn intf_fs = (CreateInterfaceFn)GetProcAddress(GetModuleHandle("FileSystem_Stdio.dll"), "CreateInterface");
+
+	networkstringtable = (INetworkStringTableContainer *)intf_engine(INTERFACENAME_NETWORKSTRINGTABLECLIENT,NULL);
+	engine = (IVEngineServer*)intf_engine("VEngineServer021", 0);
+	cvar = (ICvar *)intf_engine(VENGINE_CVAR_INTERFACE_VERSION,0);
+	cl_engine = (IVEngineClient*)intf_engine(VENGINE_CLIENT_INTERFACE_VERSION,0);
+	playerinfomanager = (IPlayerInfoManager *)intf_server(INTERFACEVERSION_PLAYERINFOMANAGER,NULL);
+	cl_list = (IClientEntityList*)intf_client("VClientEntityList003", 0);
+	serverbase = (IServerGameDLL*)intf_server(INTERFACEVERSION_SERVERGAMEDLL, NULL);
+	filesys = (IFileSystem*)intf_fs(FILESYSTEM_INTERFACE_VERSION, NULL);
+	clientbase = (IBaseClientDLL*)intf_client(CLIENT_DLL_INTERFACE_VERSION,NULL);
+
+
+cbufadd.Init((unsigned char*)"\x64\xa1\x00\x00\x00\x00\x6a\xff\x68\x00\x00\x00\x00\x50\x64\x89\x25\x00\x00\x00\x00\x83\xec\x08\x55\x8b\x6c\x24\x1c\x8b\xc5\x56\x8d\x50\x01","xx????xxx????xxxx????xxxxxxxxxxxxxx",35);
+[10:25:32 AM] Nico ?: signature for the execution func
+[10:25:40 AM] Nico ?: I think thats the only working func atm
+[10:25:45 AM] Nico ?: not quite sure

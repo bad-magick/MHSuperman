@@ -1,0 +1,29 @@
+
+eGUI solves this very easy:
+•	you put the menu on the form (dialog) directly
+•	if a command sent to a form is not sent from a button, it’s from a menu
+
+The above solves the menu commands. Now, for shortcuts – the problem with this is that a shortcut can be pressed at any time (for instance, when inside an edit box). Keyboard shortcuts (accelerators) are routed like this:
+•	to the window itself (maybe the window can interpret it; a Ctrl-C will usually yield a “Copy” command)
+•	to the form hosting the window
+•	to the form’s parent, and go up the hierarchy until we find the top-most window
+•	the first time we find an event handler for that shortcut, we stop processing (a given shortcut is not processed by 2 or more windows)
+
+That leaves toolbars – they go hand in hand with menus and shortcuts. When a toolbar button is pressed, this translates into a menu command, and is routed directly to the form that hosts them (to the application, whether the command came from a menu, a shortcut, or a toolbar button is irrelevant).
+
+
+
+
+on_menu_command(ev::menu&) -> this is very tricky
+we need to mark a command as handled ONLY if a handler like this is called:
+on_menu_command(ev::menu& e, menu::some_menu_id); // having 1 argument, like this
+
+otherwise, the menu command was NOT handled.
+
+
+i need to parse all accelerator tables, and see which possible menu commands there are
+i will create a class called handle_menu_commands, and each <dlgname>_form_resource.hpp derives from it
+this will have, for each menu, a virtual function like this:
+
+virtual void on_menum_command(ev::menu& e, menu::some_menu_id) { e.handled = not_handled; }
+

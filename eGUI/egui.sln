@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "core", "core\core.vcxproj", "{B6E4A928-F233-4695-9DD7-3FDA95870C07}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_now", "source\extra\test\test_now\test_now.vcxproj", "{F625C61F-A8EF-41F8-8EF3-F6EC03EA4DC2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "controls", "controls\controls.vcxproj", "{BBCB2BE2-5CFF-418F-8F7C-E1BB1B044983}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "events", "events\events.vcxproj", "{980CCE6C-5ED7-4798-AA11-A1046BCE8CD4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "main", "main\main.vcxproj", "{5E1B254D-8291-43BA-A678-84F8DEEDD0A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Dbg_Log|Win32 = Dbg_Log|Win32
+		DbgLog|Win32 = DbgLog|Win32
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		UnicodeDbg|Win32 = UnicodeDbg|Win32
+		UnicodeRelease|Win32 = UnicodeRelease|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6E4A928-F233-4695-9DD7-3FDA95870C07}.Dbg_Log|Win32.ActiveCfg = Dbg_Log|Win32
+		{B6E4A928-F233-4695-9DD7-3FDA95870C07}.Dbg_Log|Win32.Build.0 = Dbg_Log|Win32
+		{B6E4A928-F233-4695-9DD7-3FDA95870C07}.DbgLog|Win32.ActiveCfg = Debug|Win32
+		{B6E4A928-F233-4695-9DD7-3FDA95870C07}.DbgLog|Win32.Build.0 = Debug|Win32
+		{B6E4A928-F233-4695-9DD7-3FDA95870C07}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B6E4A928-F233-4695-9DD7-3FDA95870C07}.Debug|Win32.Build.0 = Debug|Win32
+		{B6E4A928-F233-4695-9DD7-3FDA95870C07}.Release|Win32.ActiveCfg = Release|Win32
+		{B6E4A928-F233-4695-9DD7-3FDA95870C07}.Release|Win32.Build.0 = Release|Win32
+		{B6E4A928-F233-4695-9DD7-3FDA95870C07}.UnicodeDbg|Win32.ActiveCfg = UnicodeDbg|Win32
+		{B6E4A928-F233-4695-9DD7-3FDA95870C07}.UnicodeDbg|Win32.Build.0 = UnicodeDbg|Win32
+		{B6E4A928-F233-4695-9DD7-3FDA95870C07}.UnicodeRelease|Win32.ActiveCfg = UnicodeRelease|Win32
+		{B6E4A928-F233-4695-9DD7-3FDA95870C07}.UnicodeRelease|Win32.Build.0 = UnicodeRelease|Win32
+		{F625C61F-A8EF-41F8-8EF3-F6EC03EA4DC2}.Dbg_Log|Win32.ActiveCfg = Dbg_Log|Win32
+		{F625C61F-A8EF-41F8-8EF3-F6EC03EA4DC2}.Dbg_Log|Win32.Build.0 = Dbg_Log|Win32
+		{F625C61F-A8EF-41F8-8EF3-F6EC03EA4DC2}.DbgLog|Win32.ActiveCfg = Debug|Win32
+		{F625C61F-A8EF-41F8-8EF3-F6EC03EA4DC2}.DbgLog|Win32.Build.0 = Debug|Win32
+		{F625C61F-A8EF-41F8-8EF3-F6EC03EA4DC2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F625C61F-A8EF-41F8-8EF3-F6EC03EA4DC2}.Debug|Win32.Build.0 = Debug|Win32
+		{F625C61F-A8EF-41F8-8EF3-F6EC03EA4DC2}.Release|Win32.ActiveCfg = Release|Win32
+		{F625C61F-A8EF-41F8-8EF3-F6EC03EA4DC2}.Release|Win32.Build.0 = Release|Win32
+		{F625C61F-A8EF-41F8-8EF3-F6EC03EA4DC2}.UnicodeDbg|Win32.ActiveCfg = UnicodeDbg|Win32
+		{F625C61F-A8EF-41F8-8EF3-F6EC03EA4DC2}.UnicodeDbg|Win32.Build.0 = UnicodeDbg|Win32
+		{F625C61F-A8EF-41F8-8EF3-F6EC03EA4DC2}.UnicodeRelease|Win32.ActiveCfg = UnicodeRelease|Win32
+		{F625C61F-A8EF-41F8-8EF3-F6EC03EA4DC2}.UnicodeRelease|Win32.Build.0 = UnicodeRelease|Win32
+		{BBCB2BE2-5CFF-418F-8F7C-E1BB1B044983}.Dbg_Log|Win32.ActiveCfg = Dbg_Log|Win32
+		{BBCB2BE2-5CFF-418F-8F7C-E1BB1B044983}.Dbg_Log|Win32.Build.0 = Dbg_Log|Win32
+		{BBCB2BE2-5CFF-418F-8F7C-E1BB1B044983}.DbgLog|Win32.ActiveCfg = Debug|Win32
+		{BBCB2BE2-5CFF-418F-8F7C-E1BB1B044983}.DbgLog|Win32.Build.0 = Debug|Win32
+		{BBCB2BE2-5CFF-418F-8F7C-E1BB1B044983}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BBCB2BE2-5CFF-418F-8F7C-E1BB1B044983}.Debug|Win32.Build.0 = Debug|Win32
+		{BBCB2BE2-5CFF-418F-8F7C-E1BB1B044983}.Release|Win32.ActiveCfg = Release|Win32
+		{BBCB2BE2-5CFF-418F-8F7C-E1BB1B044983}.Release|Win32.Build.0 = Release|Win32
+		{BBCB2BE2-5CFF-418F-8F7C-E1BB1B044983}.UnicodeDbg|Win32.ActiveCfg = UnicodeDbg|Win32
+		{BBCB2BE2-5CFF-418F-8F7C-E1BB1B044983}.UnicodeDbg|Win32.Build.0 = UnicodeDbg|Win32
+		{BBCB2BE2-5CFF-418F-8F7C-E1BB1B044983}.UnicodeRelease|Win32.ActiveCfg = UnicodeRelease|Win32
+		{BBCB2BE2-5CFF-418F-8F7C-E1BB1B044983}.UnicodeRelease|Win32.Build.0 = UnicodeRelease|Win32
+		{980CCE6C-5ED7-4798-AA11-A1046BCE8CD4}.Dbg_Log|Win32.ActiveCfg = Dbg_Log|Win32
+		{980CCE6C-5ED7-4798-AA11-A1046BCE8CD4}.Dbg_Log|Win32.Build.0 = Dbg_Log|Win32
+		{980CCE6C-5ED7-4798-AA11-A1046BCE8CD4}.DbgLog|Win32.ActiveCfg = Debug|Win32
+		{980CCE6C-5ED7-4798-AA11-A1046BCE8CD4}.DbgLog|Win32.Build.0 = Debug|Win32
+		{980CCE6C-5ED7-4798-AA11-A1046BCE8CD4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{980CCE6C-5ED7-4798-AA11-A1046BCE8CD4}.Debug|Win32.Build.0 = Debug|Win32
+		{980CCE6C-5ED7-4798-AA11-A1046BCE8CD4}.Release|Win32.ActiveCfg = Release|Win32
+		{980CCE6C-5ED7-4798-AA11-A1046BCE8CD4}.Release|Win32.Build.0 = Release|Win32
+		{980CCE6C-5ED7-4798-AA11-A1046BCE8CD4}.UnicodeDbg|Win32.ActiveCfg = UnicodeDbg|Win32
+		{980CCE6C-5ED7-4798-AA11-A1046BCE8CD4}.UnicodeDbg|Win32.Build.0 = UnicodeDbg|Win32
+		{980CCE6C-5ED7-4798-AA11-A1046BCE8CD4}.UnicodeRelease|Win32.ActiveCfg = UnicodeRelease|Win32
+		{980CCE6C-5ED7-4798-AA11-A1046BCE8CD4}.UnicodeRelease|Win32.Build.0 = UnicodeRelease|Win32
+		{5E1B254D-8291-43BA-A678-84F8DEEDD0A3}.Dbg_Log|Win32.ActiveCfg = Debug|Win32
+		{5E1B254D-8291-43BA-A678-84F8DEEDD0A3}.Dbg_Log|Win32.Build.0 = Debug|Win32
+		{5E1B254D-8291-43BA-A678-84F8DEEDD0A3}.DbgLog|Win32.ActiveCfg = Debug|Win32
+		{5E1B254D-8291-43BA-A678-84F8DEEDD0A3}.DbgLog|Win32.Build.0 = Debug|Win32
+		{5E1B254D-8291-43BA-A678-84F8DEEDD0A3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5E1B254D-8291-43BA-A678-84F8DEEDD0A3}.Debug|Win32.Build.0 = Debug|Win32
+		{5E1B254D-8291-43BA-A678-84F8DEEDD0A3}.Release|Win32.ActiveCfg = Release|Win32
+		{5E1B254D-8291-43BA-A678-84F8DEEDD0A3}.Release|Win32.Build.0 = Release|Win32
+		{5E1B254D-8291-43BA-A678-84F8DEEDD0A3}.UnicodeDbg|Win32.ActiveCfg = UnicodeDbg|Win32
+		{5E1B254D-8291-43BA-A678-84F8DEEDD0A3}.UnicodeDbg|Win32.Build.0 = UnicodeDbg|Win32
+		{5E1B254D-8291-43BA-A678-84F8DEEDD0A3}.UnicodeRelease|Win32.ActiveCfg = UnicodeRelease|Win32
+		{5E1B254D-8291-43BA-A678-84F8DEEDD0A3}.UnicodeRelease|Win32.Build.0 = UnicodeRelease|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

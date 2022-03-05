@@ -1,0 +1,18 @@
+resizing of dialogs, etc
+
+
+
+
+The cool thing about resizeability is that it can be implemented in many ways – depending on your application:
+•	you can override the on_size event on each form, and update the controls’ positions based on the new form size (bad idea, lots of work)
+•	on each form, you can create relations between the controls on in, like “a.x = b.x + b.width + 4;” (this is very flexible, but also requires lots of work)
+•	on each form, you can mark controls either as sizeable or moveable, on each axis
+o	if a control is marked as sizeable on a certain axis, when the form’s size changes, that control’s size will update
+o	if a control is marked as moveable on a certain axis, when the form’s size changes, that control will be moved
+o	I borrowed the idea from WTL’s CResizeWindow
+•	and so on
+
+
+i will allow to move/size groups of windows - in a group, i'll compute the original ration + distance between them, and keep it
+for simple scenarios, i'll automatically compute the sizing/moving (i will try to guess it)
+for instance, if only one control, it's sizeable on both axis.

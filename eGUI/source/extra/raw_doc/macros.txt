@@ -1,0 +1,159 @@
+
+    Sub SimpleProperty()
+        DTE.ActiveDocument.Selection.WordLeft()
+        DTE.ActiveDocument.Selection.WordRight(True, 2)
+        DTE.ActiveDocument.Selection.Copy()
+        DTE.ActiveDocument.Selection.CharRight(False, 2)
+        DTE.ActiveDocument.Selection.DeleteLeft()
+        DTE.ActiveDocument.Selection.WordLeft()
+        DTE.ActiveDocument.Selection.Text = "get_"
+        DTE.ActiveDocument.Selection.WordRight()
+        DTE.ActiveDocument.Selection.Text = "() const {}"
+        DTE.ActiveDocument.Selection.CharLeft()
+        DTE.ActiveDocument.Selection.Text = " return default_(); "
+        DTE.ActiveDocument.Selection.WordLeft(False, 5)
+        DTE.ActiveDocument.Selection.CharLeft()
+        DTE.ActiveDocument.Selection.CharRight()
+        DTE.ActiveDocument.Selection.NewLine()
+        DTE.ActiveDocument.Selection.EndOfLine()
+        DTE.ActiveDocument.Selection.CharLeft()
+        DTE.ActiveDocument.Selection.NewLine()
+        DTE.ActiveDocument.Selection.CharRight()
+        DTE.ActiveDocument.Selection.NewLine()
+        DTE.ActiveDocument.Selection.Paste()
+        DTE.ActiveDocument.Selection.WordLeft(False, 2)
+        DTE.ActiveDocument.Selection.Text = "void set "
+        DTE.ActiveDocument.Selection.WordRight()
+        DTE.ActiveDocument.Selection.WordRight(True)
+        DTE.ActiveDocument.Selection.Cut()
+        DTE.ActiveDocument.Selection.WordLeft()
+        DTE.ActiveDocument.Selection.CharLeft()
+        DTE.ActiveDocument.Selection.Text = "_"
+        DTE.ActiveDocument.Selection.Paste()
+        DTE.ActiveDocument.Selection.Text = "(const"
+        DTE.ActiveDocument.Selection.EndOfLine()
+        DTE.ActiveDocument.Selection.Text = "& val) {}"
+        DTE.ActiveDocument.Selection.CharLeft()
+        DTE.ActiveDocument.Selection.NewLine()
+        DTE.ActiveDocument.Selection.CharRight()
+        DTE.ActiveDocument.Selection.NewLine()
+
+        DTE.ActiveDocument.Selection.Text = "detail::init_property( "
+        DTE.ActiveDocument.Selection.Paste()
+        DTE.ActiveDocument.Selection.Text = ", m_impl.get(), &impl::get_"
+        DTE.ActiveDocument.Selection.Paste()
+        DTE.ActiveDocument.Selection.Text = ", &impl::set_"
+        DTE.ActiveDocument.Selection.Paste()
+        DTE.ActiveDocument.Selection.Text = ");"
+        DTE.ActiveDocument.Selection.CharRight(False, 8)
+    End Sub
+    Sub TakePropsToEnd()
+        DTE.ActiveDocument.Selection.StartOfDocument()
+        DTE.ExecuteCommand("Edit.Find")
+        DTE.Find.FindWhat = "detail::init_property"
+        DTE.Find.Action = vsFindAction.vsFindActionFind
+        DTE.Find.Target = vsFindTarget.vsFindTargetCurrentDocument
+        DTE.Find.MatchCase = False
+        DTE.Find.MatchWholeWord = False
+        DTE.Find.Backwards = False
+        DTE.Find.MatchInHiddenText = True
+        DTE.Find.PatternSyntax = vsFindPatternSyntax.vsFindPatternSyntaxLiteral
+        If (DTE.Find.Execute() = vsFindResult.vsFindResultNotFound) Then
+            Throw New System.Exception("vsFindResultNotFound")
+        End If
+        DTE.Windows.Item("{CF2DDC32-8CAD-11D2-9302-005345000000}").Close()
+        DTE.ActiveDocument.Selection.StartOfLine(vsStartOfLineOptions.vsStartOfLineOptionsFirstColumn)
+        DTE.ActiveDocument.Selection.LineDown(True)
+        DTE.ActiveDocument.Selection.Cut()
+        DTE.ActiveDocument.Selection.EndOfDocument()
+        DTE.ActiveDocument.Selection.Paste()
+    End Sub
+    Sub SendWin32Event()
+        DTE.ActiveDocument.Selection.StartOfDocument()
+        DTE.ExecuteCommand("Edit.Replace")
+        DTE.Find.Action = vsFindAction.vsFindActionReplaceAll
+        DTE.Find.FindWhat = "send_msg("
+        DTE.Find.ReplaceWith = "send_win32_event( self, "
+        DTE.Find.Target = vsFindTarget.vsFindTargetCurrentDocument
+        DTE.Find.MatchCase = False
+        DTE.Find.MatchWholeWord = False
+        DTE.Find.MatchInHiddenText = True
+        DTE.Find.PatternSyntax = vsFindPatternSyntax.vsFindPatternSyntaxLiteral
+        DTE.Find.ResultsLocation = vsFindResultsLocation.vsFindResultsNone
+        If (DTE.Find.Execute() = vsFindResult.vsFindResultNotFound) Then
+            Throw New System.Exception("vsFindResultNotFound")
+        End If
+        DTE.Windows.Item("{CF2DDC32-8CAD-11D2-9302-005345000000}").Close()
+    End Sub
+    Sub PropOneArg()
+        DTE.ActiveDocument.Selection.WordLeft()
+        DTE.ActiveDocument.Selection.WordRight(True, 3)
+        DTE.ActiveDocument.Selection.Cut()
+        DTE.ActiveDocument.Selection.CharRight()
+        DTE.ActiveDocument.Selection.DeleteLeft()
+        DTE.ActiveDocument.Selection.Paste()
+        DTE.ActiveDocument.Selection.NewLine()
+        DTE.ActiveDocument.Selection.DeleteLeft()
+        DTE.ActiveDocument.Selection.Paste()
+        DTE.ActiveDocument.Selection.NewLine()
+        DTE.ActiveDocument.Selection.Paste()
+        DTE.ActiveDocument.Selection.NewLine()
+        DTE.ActiveDocument.Selection.LineUp(False, 1)
+
+        DTE.ActiveDocument.Selection.LineUp(False, 2)
+        DTE.ActiveDocument.Selection.WordRight(False, 2)
+        DTE.ActiveDocument.Selection.WordRight(True)
+        DTE.ActiveDocument.Selection.Cut()
+        DTE.ActiveDocument.Selection.WordLeft()
+        DTE.ActiveDocument.Selection.Text = "get_"
+        DTE.ActiveDocument.Selection.Paste()
+        DTE.ActiveDocument.Selection.Text = "("
+        DTE.ActiveDocument.Selection.EndOfLine()
+        DTE.ActiveDocument.Selection.Text = "val) const {}"
+        DTE.ActiveDocument.Selection.CharLeft()
+        DTE.ActiveDocument.Selection.NewLine()
+        DTE.ActiveDocument.Selection.LineUp()
+        DTE.ActiveDocument.Selection.LineDown()
+        DTE.ActiveDocument.Selection.NewLine()
+        DTE.ActiveDocument.Selection.LineUp()
+        DTE.ActiveDocument.Selection.Indent()
+        DTE.ActiveDocument.Selection.Text = "return default()"
+        DTE.ActiveDocument.Selection.DeleteLeft(2)
+        DTE.ActiveDocument.Selection.Text = "_();"
+        DTE.ActiveDocument.Selection.LineDown(False, 2)
+        DTE.ActiveDocument.Selection.StartOfLine(vsStartOfLineOptions.vsStartOfLineOptionsFirstText)
+        DTE.ActiveDocument.Selection.Text = "void "
+        DTE.ActiveDocument.Selection.EndOfLine()
+        DTE.ActiveDocument.Selection.WordLeft(True)
+        DTE.ActiveDocument.Selection.Cut()
+        DTE.ActiveDocument.Selection.WordLeft(False, 2)
+        DTE.ActiveDocument.Selection.Text = "set_"
+        DTE.ActiveDocument.Selection.Paste()
+        DTE.ActiveDocument.Selection.Text = "( "
+        DTE.ActiveDocument.Selection.EndOfLine()
+        DTE.ActiveDocument.Selection.WordLeft(True)
+        DTE.ActiveDocument.Selection.Cut()
+        DTE.ActiveDocument.Selection.WordLeft()
+        DTE.ActiveDocument.Selection.Paste()
+        DTE.ActiveDocument.Selection.Text = "idx, const "
+        DTE.ActiveDocument.Selection.EndOfLine()
+        DTE.ActiveDocument.Selection.Text = "& val) {}"
+        DTE.ActiveDocument.Selection.CharLeft()
+        DTE.ActiveDocument.Selection.NewLine()
+
+        DTE.ActiveDocument.Selection.StartOfLine(vsStartOfLineOptions.vsStartOfLineOptionsFirstText)
+        DTE.ActiveDocument.Selection.LineDown()
+        DTE.ActiveDocument.Selection.WordRight(True, 2)
+        DTE.ActiveDocument.Selection.DeleteLeft()
+        DTE.ActiveDocument.Selection.Text = "detail::init_property( "
+        DTE.ActiveDocument.Selection.WordRight(True)
+        DTE.ActiveDocument.Selection.Copy()
+        DTE.ActiveDocument.Selection.CharRight()
+        DTE.ActiveDocument.Selection.Text = ", m_impl.get(), &impl::get_"
+        DTE.ActiveDocument.Selection.Paste()
+        DTE.ActiveDocument.Selection.Text = ", &impl::set_"
+        DTE.ActiveDocument.Selection.Paste()
+        DTE.ActiveDocument.Selection.Text = ");"
+        DTE.ActiveDocument.Selection.CharRight(False, 8)
+
+    End Sub

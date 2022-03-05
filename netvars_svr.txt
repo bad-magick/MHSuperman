@@ -1,0 +1,1836 @@
+Table: DT_BubbleBall
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_AI_BaseNPC
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_lifeState - type: 0 - elements: 1 - offset: 0x9C
+	Prop: m_bPerformAvoidance - type: 0 - elements: 1 - offset: 0x100C
+	Prop: m_bIsMoving - type: 0 - elements: 1 - offset: 0x100D
+	Prop: m_bIsJumping - type: 0 - elements: 1 - offset: 0x100E
+	Prop: m_bFadeCorpse - type: 0 - elements: 1 - offset: 0x100F
+	Prop: m_iDeathPose - type: 0 - elements: 1 - offset: 0xBE0
+	Prop: m_iDeathFrame - type: 0 - elements: 1 - offset: 0xBE4
+	Prop: m_bSpeedModActive - type: 0 - elements: 1 - offset: 0x1011
+	Prop: m_iSpeedModRadius - type: 0 - elements: 1 - offset: 0x1014
+	Prop: m_iSpeedModSpeed - type: 0 - elements: 1 - offset: 0x1018
+	Prop: m_bImportanRagdoll - type: 0 - elements: 1 - offset: 0x1010
+	Prop: m_bInChoreo - type: 0 - elements: 1 - offset: 0xB10
+	Prop: m_npcSateNet - type: 0 - elements: 1 - offset: 0xB9C
+Table: DT_Altar
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_BaseAnimating
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_nForceBone - type: 0 - elements: 1 - offset: 0x3E0
+	Prop: m_vecForce - type: 2 - elements: 1 - offset: 0x3E4
+	Prop: m_nSkin - type: 0 - elements: 1 - offset: 0x3F0
+	Prop: m_nBody - type: 0 - elements: 1 - offset: 0x3F4
+	Prop: m_nHitboxSet - type: 0 - elements: 1 - offset: 0x3F8
+	Prop: m_flModelWidthScale - type: 1 - elements: 1 - offset: 0x3FC
+	Prop: m_flPoseParameter - type: 5 - elements: 1 - offset: 0x430
+	Prop: m_nSequence - type: 0 - elements: 1 - offset: 0x42C
+	Prop: m_flPlaybackRate - type: 1 - elements: 1 - offset: 0x400
+	Prop: m_flEncodedController - type: 5 - elements: 1 - offset: 0x490
+	Prop: m_bClientSideAnimation - type: 0 - elements: 1 - offset: 0x4A0
+	Prop: m_bClientSideFrameReset - type: 0 - elements: 1 - offset: 0x4A1
+	Prop: m_nNewSequenceParity - type: 0 - elements: 1 - offset: 0x4A4
+	Prop: m_nResetEventsParity - type: 0 - elements: 1 - offset: 0x4A8
+	Prop: m_nMuzzleFlashParity - type: 0 - elements: 1 - offset: 0x4B0
+	Prop: m_hLightingOrigin - type: 0 - elements: 1 - offset: 0x4B4
+	Prop: m_hLightingOriginRelative - type: 0 - elements: 1 - offset: 0x4B8
+	Prop: serveranimdata - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_fadeMinDist - type: 1 - elements: 1 - offset: 0x50C
+	Prop: m_fadeMaxDist - type: 1 - elements: 1 - offset: 0x510
+	Prop: m_flFadeScale - type: 1 - elements: 1 - offset: 0x514
+	Prop: m_hRagdollBlender - type: 0 - elements: 1 - offset: 0x4D0
+	Prop: m_isLiftable - type: 0 - elements: 1 - offset: 0x4D8
+	Prop: m_lastSpeakTime - type: 1 - elements: 1 - offset: 0x508
+	Prop: m_lastRegisterAnimEvent - type: 0 - elements: 1 - offset: 0x590
+Table: DT_BaseAnimatingOverlay
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: overlay_vars - type: 5 - elements: 1 - offset: 0x0
+Table: DT_BaseCombatCharacter
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: bcc_localdata - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_hActiveWeapon - type: 0 - elements: 1 - offset: 0x99C
+	Prop: m_hMyWeapons - type: 5 - elements: 1 - offset: 0x8DC
+	Prop: m_iHealth - type: 0 - elements: 1 - offset: 0x84
+	Prop: m_lifeState - type: 0 - elements: 1 - offset: 0x9C
+	Prop: m_iMaxHealth - type: 0 - elements: 1 - offset: 0x80
+	Prop: m_stamina - type: 0 - elements: 1 - offset: 0x9A0
+	Prop: m_maxStamina - type: 0 - elements: 1 - offset: 0x9A8
+	Prop: m_downGauge - type: 1 - elements: 1 - offset: 0x9B8
+	Prop: m_level - type: 0 - elements: 1 - offset: 0x9CC
+	Prop: m_surfaceType - type: 0 - elements: 1 - offset: 0x9D8
+	Prop: m_figureHeightRatio - type: 1 - elements: 1 - offset: 0xA20
+	Prop: m_figureBustRatio - type: 1 - elements: 1 - offset: 0xA24
+	Prop: m_bShouldDrawHudName - type: 0 - elements: 1 - offset: 0xA2C
+	Prop: m_useHeightCorrection - type: 0 - elements: 1 - offset: 0xA41
+	Prop: m_isAllowInternalMovement - type: 0 - elements: 1 - offset: 0xA42
+	Prop: m_motionSpeedStatusEffect - type: 1 - elements: 1 - offset: 0xA74
+	Prop: m_isMotionEnabled - type: 0 - elements: 1 - offset: 0xAB0
+	Prop: m_ignoreBloodImpact - type: 0 - elements: 1 - offset: 0xA40
+	Prop: m_handIKController - type: 5 - elements: 1 - offset: 0xA78
+	Prop: m_isFriendlyFireOn - type: 0 - elements: 1 - offset: 0xAB8
+	Prop: m_statusFlags - type: 0 - elements: 1 - offset: 0xAD0
+Table: DT_BaseCombatWeapon
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: LocalWeaponData - type: 5 - elements: 1 - offset: 0x0
+	Prop: LocalActiveWeaponData - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_iViewModelIndex - type: 0 - elements: 1 - offset: 0x5AC
+	Prop: m_iWorldModelIndex - type: 0 - elements: 1 - offset: 0x5B0
+	Prop: m_iShellModelIndex - type: 0 - elements: 1 - offset: 0x5B4
+	Prop: m_iState - type: 0 - elements: 1 - offset: 0x5D4
+	Prop: m_hOwner - type: 0 - elements: 1 - offset: 0x594
+	Prop: m_iSubType - type: 0 - elements: 1 - offset: 0x608
+Table: DT_BaseDoor
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_flWaveHeight - type: 1 - elements: 1 - offset: 0x468
+Table: DT_BaseEntity
+	Prop: AnimTimeMustBeFirst - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_flSimulationTime - type: 0 - elements: 1 - offset: 0x2C
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0x340
+	Prop: m_nModelIndex - type: 0 - elements: 1 - offset: 0x1E
+	Prop: m_Collision - type: 5 - elements: 1 - offset: 0x104
+	Prop: m_nRenderFX - type: 0 - elements: 1 - offset: 0x1C
+	Prop: m_nRenderMode - type: 0 - elements: 1 - offset: 0x1D
+	Prop: m_fEffects - type: 0 - elements: 1 - offset: 0x6C
+	Prop: m_clrRender - type: 0 - elements: 1 - offset: 0x20
+	Prop: m_iTeamNum - type: 0 - elements: 1 - offset: 0x22C
+	Prop: m_CollisionGroup - type: 0 - elements: 1 - offset: 0x218
+	Prop: m_flElasticity - type: 1 - elements: 1 - offset: 0x2A4
+	Prop: m_flShadowCastDistance - type: 1 - elements: 1 - offset: 0x220
+	Prop: m_hOwnerEntity - type: 0 - elements: 1 - offset: 0x210
+	Prop: m_hEffectEntity - type: 0 - elements: 1 - offset: 0x214
+	Prop: moveparent - type: 0 - elements: 1 - offset: 0xF8
+	Prop: m_iParentAttachment - type: 0 - elements: 1 - offset: 0xED
+	Prop: m_iParentBoneIndex - type: 0 - elements: 1 - offset: 0xF0
+	Prop: movetype - type: 0 - elements: 1 - offset: 0xF4
+	Prop: movecollide - type: 0 - elements: 1 - offset: 0xF5
+	Prop: m_angRotation - type: 2 - elements: 1 - offset: 0x34C
+	Prop: m_iTextureFrameIndex - type: 0 - elements: 1 - offset: 0x2D0
+	Prop: predictable_id - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_bSimulatedEveryTick - type: 0 - elements: 1 - offset: 0x2D1
+	Prop: m_bAnimatedEveryTick - type: 0 - elements: 1 - offset: 0x2D2
+	Prop: m_bAlternateSorting - type: 0 - elements: 1 - offset: 0x2D3
+	Prop: m_spawnflags - type: 0 - elements: 1 - offset: 0xB4
+	Prop: m_isExcludeEyeTarget - type: 0 - elements: 1 - offset: 0x378
+	Prop: m_isExcludeAutoTargeting - type: 0 - elements: 1 - offset: 0x379
+	Prop: m_flRenderTimeScale - type: 2 - elements: 1 - offset: 0x37C
+Table: DT_BaseFlex
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_flexWeight - type: 5 - elements: 1 - offset: 0x5A8
+	Prop: m_blinktoggle - type: 0 - elements: 1 - offset: 0x6B4
+	Prop: m_viewtarget - type: 2 - elements: 1 - offset: 0x6A8
+Table: DT_BaseGrenade
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_flDamage - type: 1 - elements: 1 - offset: 0xAE8
+	Prop: m_DmgRadius - type: 1 - elements: 1 - offset: 0xADC
+	Prop: m_bIsLive - type: 0 - elements: 1 - offset: 0xAD9
+	Prop: m_hThrower - type: 0 - elements: 1 - offset: 0xAF0
+	Prop: m_vecVelocity - type: 2 - elements: 1 - offset: 0x2C4
+	Prop: m_fFlags - type: 0 - elements: 1 - offset: 0xBC
+Table: DT_BaseParticleEntity
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_BasePinupable
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: pTargetNpc - type: 0 - elements: 1 - offset: 0x828
+	Prop: pinnupBoneIndex - type: 0 - elements: 1 - offset: 0x82C
+Table: DT_BasePlayer
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: pl - type: 5 - elements: 1 - offset: 0xC94
+	Prop: m_hVehicle - type: 0 - elements: 1 - offset: 0xD44
+	Prop: m_hUseEntity - type: 0 - elements: 1 - offset: 0xD34
+	Prop: m_lifeState - type: 0 - elements: 1 - offset: 0x9C
+	Prop: m_flMaxspeed - type: 1 - elements: 1 - offset: 0x1070
+	Prop: m_fFlags - type: 0 - elements: 1 - offset: 0xBC
+	Prop: m_iObserverMode - type: 0 - elements: 1 - offset: 0xD70
+	Prop: m_hObserverTarget - type: 0 - elements: 1 - offset: 0xD80
+	Prop: m_iFOV - type: 0 - elements: 1 - offset: 0xD74
+	Prop: m_iDefaultFOV - type: 0 - elements: 1 - offset: 0xD78
+	Prop: m_hViewModel - type: 0 - elements: 1 - offset: 0xF8C
+	Prop: m_hViewModel - type: 4 - elements: 2 - offset: 0x0
+	Prop: m_szLastPlaceName - type: 3 - elements: 1 - offset: 0x1154
+	Prop: m_szNetname - type: 3 - elements: 1 - offset: 0x1114
+	Prop: localdata - type: 5 - elements: 1 - offset: 0x0
+Table: DT_BasePropDoor
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_BaseTempEntity
+Table: DT_BaseViewModel
+	Prop: m_nModelIndex - type: 0 - elements: 1 - offset: 0x1E
+	Prop: m_nBody - type: 0 - elements: 1 - offset: 0x3F4
+	Prop: m_nSkin - type: 0 - elements: 1 - offset: 0x3F0
+	Prop: m_nSequence - type: 0 - elements: 1 - offset: 0x42C
+	Prop: m_nViewModelIndex - type: 0 - elements: 1 - offset: 0x594
+	Prop: m_flPlaybackRate - type: 1 - elements: 1 - offset: 0x400
+	Prop: m_fEffects - type: 0 - elements: 1 - offset: 0x6C
+	Prop: m_nAnimationParity - type: 0 - elements: 1 - offset: 0x5A4
+	Prop: m_hWeapon - type: 0 - elements: 1 - offset: 0x5BC
+	Prop: m_hOwner - type: 0 - elements: 1 - offset: 0x598
+	Prop: m_nNewSequenceParity - type: 0 - elements: 1 - offset: 0x4A4
+	Prop: m_nResetEventsParity - type: 0 - elements: 1 - offset: 0x4A8
+	Prop: m_nMuzzleFlashParity - type: 0 - elements: 1 - offset: 0x4B0
+	Prop: m_flPoseParameter - type: 1 - elements: 1 - offset: 0x430
+	Prop: m_flPoseParameter - type: 4 - elements: 24 - offset: 0x0
+Table: DT_Beam
+	Prop: m_nBeamType - type: 0 - elements: 1 - offset: 0x3C0
+	Prop: m_nBeamFlags - type: 0 - elements: 1 - offset: 0x3C4
+	Prop: m_nNumBeamEnts - type: 0 - elements: 1 - offset: 0x3B8
+	Prop: m_hAttachEntity - type: 0 - elements: 1 - offset: 0x3C8
+	Prop: m_hAttachEntity - type: 4 - elements: 10 - offset: 0x0
+	Prop: m_nAttachIndex - type: 0 - elements: 1 - offset: 0x3F0
+	Prop: m_nAttachIndex - type: 4 - elements: 10 - offset: 0x0
+	Prop: m_nHaloIndex - type: 0 - elements: 1 - offset: 0x3BC
+	Prop: m_fHaloScale - type: 1 - elements: 1 - offset: 0x424
+	Prop: m_fWidth - type: 1 - elements: 1 - offset: 0x418
+	Prop: m_fEndWidth - type: 1 - elements: 1 - offset: 0x41C
+	Prop: m_fFadeLength - type: 1 - elements: 1 - offset: 0x420
+	Prop: m_fAmplitude - type: 1 - elements: 1 - offset: 0x428
+	Prop: m_fStartFrame - type: 1 - elements: 1 - offset: 0x42C
+	Prop: m_fSpeed - type: 1 - elements: 1 - offset: 0x430
+	Prop: m_nRenderFX - type: 0 - elements: 1 - offset: 0x1C
+	Prop: m_nRenderMode - type: 0 - elements: 1 - offset: 0x1D
+	Prop: m_flFrameRate - type: 1 - elements: 1 - offset: 0x3A8
+	Prop: m_flHDRColorScale - type: 1 - elements: 1 - offset: 0x3AC
+	Prop: m_flFrame - type: 1 - elements: 1 - offset: 0x434
+	Prop: m_clrRender - type: 0 - elements: 1 - offset: 0x20
+	Prop: m_vecEndPos - type: 2 - elements: 1 - offset: 0x438
+	Prop: m_nModelIndex - type: 0 - elements: 1 - offset: 0x1E
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0x340
+	Prop: moveparent - type: 0 - elements: 1 - offset: 0xF8
+	Prop: beampredictable_id - type: 5 - elements: 1 - offset: 0x0
+Table: DT_BeamAttack
+	Prop: m_nBeamType - type: 0 - elements: 1 - offset: 0x3A8
+	Prop: m_nBeamFlags - type: 0 - elements: 1 - offset: 0x3AC
+	Prop: m_nNumBeamEnts - type: 0 - elements: 1 - offset: 0x3B0
+	Prop: m_hAttachEntities - type: 0 - elements: 1 - offset: 0x3B4
+	Prop: m_hAttachEntities - type: 4 - elements: 10 - offset: 0x0
+	Prop: m_nAttachIndices - type: 0 - elements: 1 - offset: 0x3DC
+	Prop: m_nAttachIndices - type: 4 - elements: 10 - offset: 0x0
+	Prop: m_fAttachTimes - type: 1 - elements: 1 - offset: 0x404
+	Prop: m_fAttachTimes - type: 4 - elements: 10 - offset: 0x0
+	Prop: m_nBeamTextures - type: 0 - elements: 1 - offset: 0x42C
+	Prop: m_nBeamTextures - type: 4 - elements: 4 - offset: 0x0
+	Prop: m_fWidth - type: 1 - elements: 1 - offset: 0x43C
+	Prop: m_fEndWidth - type: 1 - elements: 1 - offset: 0x440
+	Prop: m_fAmplitude - type: 1 - elements: 1 - offset: 0x448
+	Prop: m_fAmplitudeSecondary - type: 1 - elements: 1 - offset: 0x44C
+	Prop: m_fFuzzyMin - type: 1 - elements: 1 - offset: 0x450
+	Prop: m_fFuzzyMax - type: 1 - elements: 1 - offset: 0x454
+	Prop: m_fNoiseUpdateTick - type: 1 - elements: 1 - offset: 0x458
+	Prop: m_fSpeed - type: 1 - elements: 1 - offset: 0x460
+	Prop: m_clrRender - type: 0 - elements: 1 - offset: 0x20
+	Prop: m_vecEndPoint - type: 2 - elements: 1 - offset: 0x464
+Table: DT_BoneFollower
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_modelIndex - type: 0 - elements: 1 - offset: 0x3A8
+	Prop: m_solidIndex - type: 0 - elements: 1 - offset: 0x3AC
+Table: DT_Breakable
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_BreakableProp
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_iHealth - type: 0 - elements: 1 - offset: 0x84
+Table: DT_BreakableSurface
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_nNumWide - type: 0 - elements: 1 - offset: 0x458
+	Prop: m_nNumHigh - type: 0 - elements: 1 - offset: 0x45C
+	Prop: m_flPanelWidth - type: 1 - elements: 1 - offset: 0x460
+	Prop: m_flPanelHeight - type: 1 - elements: 1 - offset: 0x464
+	Prop: m_vNormal - type: 2 - elements: 1 - offset: 0x468
+	Prop: m_vCorner - type: 2 - elements: 1 - offset: 0x474
+	Prop: m_bIsBroken - type: 0 - elements: 1 - offset: 0x480
+	Prop: m_nSurfaceType - type: 0 - elements: 1 - offset: 0x484
+	Prop: m_RawPanelBitVec - type: 5 - elements: 1 - offset: 0x8C4
+Table: DT_ColorCorrection
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0x340
+	Prop: m_MinFalloff - type: 1 - elements: 1 - offset: 0x3B0
+	Prop: m_MaxFalloff - type: 1 - elements: 1 - offset: 0x3B4
+	Prop: m_MaxWeight - type: 1 - elements: 1 - offset: 0x3B8
+	Prop: m_netlookupFilename - type: 3 - elements: 1 - offset: 0x3BC
+	Prop: m_bEnabled - type: 0 - elements: 1 - offset: 0x3A9
+Table: DT_ColorCorrectionPlayer
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_players - type: 0 - elements: 1 - offset: 0x4C4
+	Prop: m_players - type: 4 - elements: 32 - offset: 0x0
+Table: DT_ColorCorrectionVolume
+	Prop: m_Weight - type: 1 - elements: 1 - offset: 0x4A8
+	Prop: m_lookupFilename - type: 3 - elements: 1 - offset: 0x4B0
+Table: DT_DualLinkBullet
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_DUMMY_MaterialAnimating
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_DynamicLight
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_Flags - type: 0 - elements: 1 - offset: 0x3A9
+	Prop: m_LightStyle - type: 0 - elements: 1 - offset: 0x3AA
+	Prop: m_Radius - type: 1 - elements: 1 - offset: 0x3AC
+	Prop: m_Exponent - type: 0 - elements: 1 - offset: 0x3B0
+	Prop: m_InnerAngle - type: 1 - elements: 1 - offset: 0x3B4
+	Prop: m_OuterAngle - type: 1 - elements: 1 - offset: 0x3B8
+	Prop: m_SpotRadius - type: 1 - elements: 1 - offset: 0x3BC
+Table: DT_DynamicProp
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_bUseHitboxesForRenderBox - type: 0 - elements: 1 - offset: 0x71C
+	Prop: m_pickingCommand - type: 3 - elements: 1 - offset: 0x72C
+	Prop: m_bUseStuckSolve - type: 0 - elements: 1 - offset: 0x82B
+Table: DT_DynamicPropCarryable
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_isCarryable - type: 0 - elements: 1 - offset: 0x830
+	Prop: m_carryalbeType - type: 0 - elements: 1 - offset: 0x834
+Table: DT_Effect_Controller
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_isTurnOn - type: 0 - elements: 1 - offset: 0x3A8
+	Prop: m_useLightValue - type: 1 - elements: 1 - offset: 0x3AC
+Table: DT_Embers
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_nDensity - type: 0 - elements: 1 - offset: 0x3A8
+	Prop: m_nLifetime - type: 0 - elements: 1 - offset: 0x3AC
+	Prop: m_nSpeed - type: 0 - elements: 1 - offset: 0x3B0
+	Prop: m_bEmit - type: 0 - elements: 1 - offset: 0x3B4
+Table: DT_EntAnimatingAreaAttack
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_szAnimatingAttackType - type: 3 - elements: 1 - offset: 0x1EB4
+Table: DT_EntityDissolve
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_flStartTime - type: 1 - elements: 1 - offset: 0x3A8
+	Prop: m_flFadeInStart - type: 1 - elements: 1 - offset: 0x3AC
+	Prop: m_flFadeInLength - type: 1 - elements: 1 - offset: 0x3B0
+	Prop: m_flFadeOutModelStart - type: 1 - elements: 1 - offset: 0x3B4
+	Prop: m_flFadeOutModelLength - type: 1 - elements: 1 - offset: 0x3B8
+	Prop: m_flFadeOutStart - type: 1 - elements: 1 - offset: 0x3BC
+	Prop: m_flFadeOutLength - type: 1 - elements: 1 - offset: 0x3C0
+	Prop: m_nDissolveType - type: 0 - elements: 1 - offset: 0x3C4
+	Prop: m_vDissolverOrigin - type: 2 - elements: 1 - offset: 0x3C8
+	Prop: m_nMagnitude - type: 0 - elements: 1 - offset: 0x3D4
+Table: DT_EntityFlame
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_flSize - type: 1 - elements: 1 - offset: 0x3AC
+	Prop: m_hEntAttached - type: 0 - elements: 1 - offset: 0x3A8
+	Prop: m_bUseHitboxes - type: 0 - elements: 1 - offset: 0x3B0
+	Prop: m_flLifetime - type: 1 - elements: 1 - offset: 0x3B4
+Table: DT_EntityParticleTrail
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_iMaterialName - type: 0 - elements: 1 - offset: 0x3A8
+	Prop: m_Info - type: 5 - elements: 1 - offset: 0x3AC
+	Prop: m_hConstraintEntity - type: 0 - elements: 1 - offset: 0x3C0
+Table: DT_DetailController
+	Prop: m_flFadeStartDist - type: 1 - elements: 1 - offset: 0x3A8
+	Prop: m_flFadeEndDist - type: 1 - elements: 1 - offset: 0x3AC
+Table: DT_EnvLight
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_globalCubemap - type: 0 - elements: 1 - offset: 0x3B8
+	Prop: m_AmbientLightStyle - type: 0 - elements: 1 - offset: 0x3BC
+	Prop: m_lightState - type: 0 - elements: 1 - offset: 0x3C0
+Table: DT_EnvParticleScript
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_flSequenceScale - type: 1 - elements: 1 - offset: 0x594
+Table: DT_EnvProjectedTexture
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_hTargetEntity - type: 0 - elements: 1 - offset: 0x3A8
+	Prop: m_bState - type: 0 - elements: 1 - offset: 0x3AC
+	Prop: m_flLightFOV - type: 1 - elements: 1 - offset: 0x3B0
+	Prop: m_bEnableShadows - type: 0 - elements: 1 - offset: 0x3B4
+	Prop: m_bLightOnlyTarget - type: 0 - elements: 1 - offset: 0x3B5
+	Prop: m_bLightWorld - type: 0 - elements: 1 - offset: 0x3B6
+	Prop: m_bCameraSpace - type: 0 - elements: 1 - offset: 0x3B7
+	Prop: m_cLightColor - type: 0 - elements: 1 - offset: 0x3B8
+Table: DT_QuadraticBeam
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_targetPosition - type: 2 - elements: 1 - offset: 0x3A8
+	Prop: m_controlPosition - type: 2 - elements: 1 - offset: 0x3B4
+	Prop: m_scrollRate - type: 1 - elements: 1 - offset: 0x3C0
+	Prop: m_flWidth - type: 1 - elements: 1 - offset: 0x3C4
+Table: DT_EnvScreenEffect
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_flDuration - type: 1 - elements: 1 - offset: 0x3A8
+	Prop: m_nType - type: 0 - elements: 1 - offset: 0x3AC
+Table: DT_EnvScreenOverlay
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_iszOverlayNames - type: 3 - elements: 1 - offset: 0x3A8
+	Prop: m_iszOverlayNames - type: 4 - elements: 10 - offset: 0x0
+	Prop: m_flOverlayTimes - type: 1 - elements: 1 - offset: 0x3D0
+	Prop: m_flOverlayTimes - type: 4 - elements: 10 - offset: 0x0
+	Prop: m_flStartTime - type: 1 - elements: 1 - offset: 0x3F8
+	Prop: m_iDesiredOverlay - type: 0 - elements: 1 - offset: 0x3FC
+	Prop: m_bIsActive - type: 0 - elements: 1 - offset: 0x400
+Table: DT_EnvSSAO
+	Prop: m_bOn - type: 0 - elements: 1 - offset: 0x3A8
+	Prop: m_falloffcurve - type: 1 - elements: 1 - offset: 0x3AC
+	Prop: m_blendweight - type: 1 - elements: 1 - offset: 0x3B0
+	Prop: m_occdist_scale - type: 1 - elements: 1 - offset: 0x3B4
+	Prop: m_occdist_power - type: 1 - elements: 1 - offset: 0x3B8
+Table: DT_EnvTonemapController
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_bUseCustomAutoExposureMin - type: 0 - elements: 1 - offset: 0x3B8
+	Prop: m_bUseCustomAutoExposureMax - type: 0 - elements: 1 - offset: 0x3B9
+	Prop: m_bUseCustomBloomScale - type: 0 - elements: 1 - offset: 0x3BA
+	Prop: m_flCustomAutoExposureMin - type: 1 - elements: 1 - offset: 0x3BC
+	Prop: m_flCustomAutoExposureMax - type: 1 - elements: 1 - offset: 0x3C0
+	Prop: m_flCustomBloomScale - type: 1 - elements: 1 - offset: 0x3C4
+	Prop: m_flCustomBloomScaleMinimum - type: 1 - elements: 1 - offset: 0x3C8
+Table: DT_EnvWind
+	Prop: m_EnvWindShared - type: 5 - elements: 1 - offset: 0x3A8
+Table: DT_FireSmoke
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_flStartScale - type: 1 - elements: 1 - offset: 0x3A8
+	Prop: m_flScale - type: 1 - elements: 1 - offset: 0x3AC
+	Prop: m_flScaleTime - type: 1 - elements: 1 - offset: 0x3B0
+	Prop: m_nFlags - type: 0 - elements: 1 - offset: 0x3B4
+	Prop: m_nFlameModelIndex - type: 0 - elements: 1 - offset: 0x3B8
+	Prop: m_nFlameFromAboveModelIndex - type: 0 - elements: 1 - offset: 0x3BC
+Table: DT_CFish
+	Prop: m_poolOrigin - type: 2 - elements: 1 - offset: 0x5C8
+	Prop: m_angle - type: 1 - elements: 1 - offset: 0x5A8
+	Prop: m_x - type: 1 - elements: 1 - offset: 0x59C
+	Prop: m_y - type: 1 - elements: 1 - offset: 0x5A0
+	Prop: m_z - type: 1 - elements: 1 - offset: 0x5A4
+	Prop: m_nModelIndex - type: 0 - elements: 1 - offset: 0x1E
+	Prop: m_lifeState - type: 0 - elements: 1 - offset: 0x9C
+	Prop: m_waterLevel - type: 1 - elements: 1 - offset: 0x5D4
+Table: DT_FootstepControl
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_source - type: 3 - elements: 1 - offset: 0x4A4
+	Prop: m_destination - type: 3 - elements: 1 - offset: 0x4A8
+Table: DT_Func_Dust
+	Prop: m_Color - type: 0 - elements: 1 - offset: 0x3A8
+	Prop: m_SpawnRate - type: 0 - elements: 1 - offset: 0x3AC
+	Prop: m_SpeedMax - type: 0 - elements: 1 - offset: 0x3B8
+	Prop: m_flSizeMin - type: 1 - elements: 1 - offset: 0x3B0
+	Prop: m_flSizeMax - type: 1 - elements: 1 - offset: 0x3B4
+	Prop: m_DistMax - type: 0 - elements: 1 - offset: 0x3C4
+	Prop: m_LifetimeMin - type: 0 - elements: 1 - offset: 0x3BC
+	Prop: m_LifetimeMax - type: 0 - elements: 1 - offset: 0x3C0
+	Prop: m_DustFlags - type: 0 - elements: 1 - offset: 0x3CC
+	Prop: m_nModelIndex - type: 0 - elements: 1 - offset: 0x1E
+	Prop: m_FallSpeed - type: 1 - elements: 1 - offset: 0x3C8
+	Prop: m_Collision - type: 5 - elements: 1 - offset: 0x104
+Table: DT_Func_LOD
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_fDisappearDist - type: 1 - elements: 1 - offset: 0x3A8
+Table: DT_FuncAreaPortalWindow
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_flFadeDist - type: 1 - elements: 1 - offset: 0x3B8
+	Prop: m_flFadeStartDist - type: 1 - elements: 1 - offset: 0x3B4
+	Prop: m_flTranslucencyLimit - type: 1 - elements: 1 - offset: 0x3BC
+	Prop: m_iBackgroundModelIndex - type: 0 - elements: 1 - offset: 0x3C4
+Table: DT_FuncBrush
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_FuncClip
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_iDisabled - type: 0 - elements: 1 - offset: 0x3AC
+	Prop: m_iszExcludedClass - type: 3 - elements: 1 - offset: 0x3B0
+	Prop: m_bInvertExcludeClass - type: 0 - elements: 1 - offset: 0x3B4
+	Prop: m_iszExcludedTargetName - type: 3 - elements: 1 - offset: 0x3B8
+	Prop: m_bInvertExcludeTargetName - type: 0 - elements: 1 - offset: 0x3BC
+Table: DT_FuncConveyor
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_flConveyorSpeed - type: 1 - elements: 1 - offset: 0x3B8
+Table: DT_FuncLadder
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecPlayerMountPositionTop - type: 2 - elements: 1 - offset: 0x3C8
+	Prop: m_vecPlayerMountPositionBottom - type: 2 - elements: 1 - offset: 0x3D4
+	Prop: m_vecLadderDir - type: 2 - elements: 1 - offset: 0x3A8
+	Prop: m_bFakeLadder - type: 0 - elements: 1 - offset: 0x3E1
+Table: DT_FuncMonitor
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_FuncOccluder
+	Prop: m_bActive - type: 0 - elements: 1 - offset: 0x3A8
+	Prop: m_nOccluderIndex - type: 0 - elements: 1 - offset: 0x3AC
+Table: DT_FuncRotating
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_cVecMoveAng - type: 2 - elements: 1 - offset: 0x3C0
+	Prop: m_cAngStart - type: 2 - elements: 1 - offset: 0x3CC
+	Prop: m_flFanFriction - type: 1 - elements: 1 - offset: 0x3D8
+	Prop: m_flAttenuation - type: 1 - elements: 1 - offset: 0x3DC
+	Prop: m_flVolume - type: 1 - elements: 1 - offset: 0x3E0
+	Prop: m_flTargetSpeed - type: 1 - elements: 1 - offset: 0x3E4
+	Prop: m_flMaxSpeed - type: 1 - elements: 1 - offset: 0x3E8
+	Prop: m_bStopAtStartPos - type: 0 - elements: 1 - offset: 0x3EC
+	Prop: m_bReversed - type: 0 - elements: 1 - offset: 0x3ED
+	Prop: m_isClientsimulation - type: 0 - elements: 1 - offset: 0x3EE
+Table: DT_FuncSmokeVolume
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_Color1 - type: 0 - elements: 1 - offset: 0x3A8
+	Prop: m_Color2 - type: 0 - elements: 1 - offset: 0x3AC
+	Prop: m_MaterialName - type: 3 - elements: 1 - offset: 0x3B0
+	Prop: m_ParticleDrawWidth - type: 1 - elements: 1 - offset: 0x4B4
+	Prop: m_ParticleSpacingDistance - type: 1 - elements: 1 - offset: 0x4B8
+	Prop: m_DensityRampSpeed - type: 1 - elements: 1 - offset: 0x4BC
+	Prop: m_RotationSpeed - type: 1 - elements: 1 - offset: 0x4C0
+	Prop: m_MovementSpeed - type: 1 - elements: 1 - offset: 0x4C4
+	Prop: m_Density - type: 1 - elements: 1 - offset: 0x4C8
+	Prop: m_spawnflags - type: 0 - elements: 1 - offset: 0xB4
+Table: DT_FuncTrackTrain
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_GameRulesProxy
+Table: DT_GoldenBall
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_HandleTest
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_Handle - type: 0 - elements: 1 - offset: 0x3A8
+	Prop: m_bSendHandle - type: 0 - elements: 1 - offset: 0x3AC
+Table: DT_Heroes_AI_BaseActor
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_hitPositionCapabilities - type: 0 - elements: 1 - offset: 0x14C0
+	Prop: m_downFacing - type: 0 - elements: 1 - offset: 0x14D4
+	Prop: m_postureState - type: 0 - elements: 1 - offset: 0x14D8
+	Prop: m_NPCName - type: 3 - elements: 1 - offset: 0x14FC
+	Prop: m_className - type: 3 - elements: 1 - offset: 0x157C
+	Prop: m_variationName - type: 3 - elements: 1 - offset: 0x159C
+	Prop: m_isSuperArmorNoDownMode - type: 0 - elements: 1 - offset: 0x15D6
+	Prop: m_isSuperArmor - type: 0 - elements: 1 - offset: 0x15D7
+	Prop: m_isSuperArmorDefault - type: 0 - elements: 1 - offset: 0x15D8
+	Prop: npcSizeType - type: 0 - elements: 1 - offset: 0x188C
+	Prop: m_isAttackIgnoreSizeType - type: 0 - elements: 1 - offset: 0x1890
+	Prop: m_ATK - type: 0 - elements: 1 - offset: 0x18AC
+	Prop: m_DEF - type: 0 - elements: 1 - offset: 0x18B0
+	Prop: m_DEFNaked - type: 0 - elements: 1 - offset: 0x18B4
+	Prop: m_ATKBonusHero - type: 0 - elements: 1 - offset: 0x18B8
+	Prop: m_bBigBloodEffectEnabled - type: 0 - elements: 1 - offset: 0x18BC
+	Prop: m_bNoBloodEffect - type: 0 - elements: 1 - offset: 0x18BD
+	Prop: m_bHitGroupFlinchEnabled - type: 0 - elements: 1 - offset: 0x18BE
+	Prop: m_bGuardActivated - type: 0 - elements: 1 - offset: 0x18BF
+	Prop: m_guardAllowingAngle - type: 1 - elements: 1 - offset: 0x18C0
+	Prop: m_bDiableIKHeight - type: 0 - elements: 1 - offset: 0x18C4
+	Prop: m_isInvincible - type: 0 - elements: 1 - offset: 0x18CD
+	Prop: m_hIgnoredAttacker - type: 0 - elements: 1 - offset: 0x18D0
+	Prop: m_lastMoveParent - type: 0 - elements: 1 - offset: 0x12B8
+	Prop: m_collisionUpdateAll - type: 0 - elements: 1 - offset: 0x1454
+	Prop: m_isGrapplingable - type: 0 - elements: 1 - offset: 0x18D4
+	Prop: m_isGrapplingNow - type: 0 - elements: 1 - offset: 0x18D5
+	Prop: m_talkEnable - type: 0 - elements: 1 - offset: 0x1938
+	Prop: m_isNeutralNPC - type: 0 - elements: 1 - offset: 0x1E28
+	Prop: m_materialGameData - type: 5 - elements: 1 - offset: 0x142C
+	Prop: baseactor_over_medium_size_only - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_nDropItem - type: 0 - elements: 1 - offset: 0x193C
+	Prop: m_bBoss - type: 0 - elements: 1 - offset: 0x1944
+	Prop: m_lootedPlayerIndex - type: 0 - elements: 1 - offset: 0x1948
+	Prop: m_lootedPlayerIndex - type: 4 - elements: 10 - offset: 0x0
+	Prop: m_lookAtParam - type: 1 - elements: 1 - offset: 0x185C
+	Prop: m_lookAtParam - type: 4 - elements: 4 - offset: 0x0
+	Prop: m_hGroundEntity - type: 0 - elements: 1 - offset: 0x238
+	Prop: m_curBrokenModel - type: 0 - elements: 1 - offset: 0x15F8
+	Prop: m_bShouldKeepAttackCollision - type: 0 - elements: 1 - offset: 0x18D6
+	Prop: m_isRagdollFlying - type: 0 - elements: 1 - offset: 0x1A98
+	Prop: m_isBossNamingSceneable - type: 0 - elements: 1 - offset: 0x1ABA
+	Prop: m_localBBoxOffset - type: 2 - elements: 1 - offset: 0x1254
+	Prop: m_isBBoxOffsetEnable - type: 0 - elements: 1 - offset: 0x1260
+	Prop: m_hitDualLink - type: 0 - elements: 1 - offset: 0x1261
+	Prop: m_VPhysicsShadowMins - type: 2 - elements: 1 - offset: 0x1274
+	Prop: m_VPhysicsShadowMaxs - type: 2 - elements: 1 - offset: 0x1280
+	Prop: m_isVPhysicsShadowBBoxOverrided - type: 0 - elements: 1 - offset: 0x128C
+	Prop: m_hGoldCoreOwner - type: 0 - elements: 1 - offset: 0x1AD4
+	Prop: m_eliteKeywordName - type: 3 - elements: 1 - offset: 0x1AE1
+	Prop: m_eliteLevel - type: 0 - elements: 1 - offset: 0x1B04
+	Prop: m_bDisableEliteEffect - type: 0 - elements: 1 - offset: 0x1B01
+	Prop: m_isResetRotateInterp - type: 0 - elements: 1 - offset: 0x1B5C
+	Prop: m_isResetRotateInterpCheckBit - type: 0 - elements: 1 - offset: 0x1B60
+	Prop: m_eliteGlowBlink - type: 0 - elements: 1 - offset: 0x1B0C
+	Prop: m_materialModificationStatus - type: 0 - elements: 1 - offset: 0x1BC0
+	Prop: m_shouldDrawOwnerName - type: 0 - elements: 1 - offset: 0x1BC4
+	Prop: m_duelControllerMonster - type: 5 - elements: 1 - offset: 0x1BF4
+	Prop: m_rapidGrapplingType - type: 0 - elements: 1 - offset: 0x1C68
+	Prop: m_frameSynchronizer - type: 5 - elements: 1 - offset: 0x1CF4
+	Prop: m_criticalDmgFactor - type: 1 - elements: 1 - offset: 0x1D18
+	Prop: m_criticalHitRatio - type: 0 - elements: 1 - offset: 0x1D1C
+	Prop: m_criticalResistance - type: 0 - elements: 1 - offset: 0x1D20
+	Prop: m_isBeginRapidGrappling - type: 0 - elements: 1 - offset: 0x1C6C
+	Prop: m_rapidGrapplingPostfix - type: 3 - elements: 1 - offset: 0x1C6D
+	Prop: m_isKayMounted - type: 0 - elements: 1 - offset: 0x1D61
+	Prop: m_isTempestFlinchReaction - type: 0 - elements: 1 - offset: 0x1D6C
+	Prop: m_isTempestFinish - type: 0 - elements: 1 - offset: 0x1D6D
+	Prop: m_loadFigureBoneFile - type: 3 - elements: 1 - offset: 0x1D80
+	Prop: m_curColorNum - type: 0 - elements: 1 - offset: 0x1B10
+	Prop: m_isTrialEventActor - type: 0 - elements: 1 - offset: 0x1B0D
+Table: DT_TE_BaseAnimating
+	Prop: m_hEntity - type: 0 - elements: 1 - offset: 0xC
+	Prop: m_eventType - type: 0 - elements: 1 - offset: 0x10
+	Prop: m_eventString - type: 3 - elements: 1 - offset: 0x14
+Table: DT_HeroesBaseFrag
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_detonateTime - type: 1 - elements: 1 - offset: 0x834
+	Prop: m_nSkin - type: 0 - elements: 1 - offset: 0x0
+Table: DT_HeroesCollectibleItem
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_ItemName - type: 3 - elements: 1 - offset: 0x60C
+	Prop: m_hItemOwner - type: 0 - elements: 1 - offset: 0x68C
+	Prop: m_isLooted - type: 0 - elements: 1 - offset: 0x690
+	Prop: m_playerName - type: 3 - elements: 1 - offset: 0x691
+Table: DT_HeroesEnvEffectExecutor
+	Prop: m_startDisabled - type: 0 - elements: 1 - offset: 0x3A8
+	Prop: m_refreshCount - type: 0 - elements: 1 - offset: 0x3AC
+	Prop: m_efxName - type: 3 - elements: 1 - offset: 0x3B0
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0x340
+	Prop: m_angRotation - type: 2 - elements: 1 - offset: 0x34C
+	Prop: moveparent - type: 0 - elements: 1 - offset: 0xF8
+Table: DT_HeroesFishingItemBox
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_bShouldDraw - type: 0 - elements: 1 - offset: 0x714
+Table: DT_HeroesGameRulesProxy
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: heroes_gamerules_data - type: 5 - elements: 1 - offset: 0x0
+Table: DT_HeroesGatheringRock
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_isRare - type: 0 - elements: 1 - offset: 0x7F0
+	Prop: m_RequiredExp - type: 0 - elements: 1 - offset: 0x7F4
+	Prop: m_usedPlayerNum - type: 0 - elements: 1 - offset: 0x7F8
+	Prop: m_usedPlayerTags - type: 0 - elements: 1 - offset: 0x7FC
+	Prop: m_usedPlayerTags - type: 4 - elements: 32 - offset: 0x0
+	Prop: m_RequiredStoryLine - type: 3 - elements: 1 - offset: 0x87C
+Table: DT_HeroesItemSprite
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_HeroesPlayer
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_angEyeAngles[0] - type: 1 - elements: 1 - offset: 0x12B4
+	Prop: m_angEyeAngles[1] - type: 1 - elements: 1 - offset: 0x12B8
+	Prop: m_flPoseParameter - type: 0 - elements: 1 - offset: 0x0
+	Prop: m_viewtarget - type: 0 - elements: 1 - offset: 0x0
+	Prop: m_nMuzzleFlashParity - type: 0 - elements: 1 - offset: 0x0
+	Prop: overlay_vars - type: 0 - elements: 1 - offset: 0x0
+	Prop: m_armorData - type: 5 - elements: 1 - offset: 0x12C8
+	Prop: m_iPlayerState - type: 0 - elements: 1 - offset: 0x11E4
+	Prop: m_iClass - type: 0 - elements: 1 - offset: 0x1238
+	Prop: m_flFlashDuration - type: 1 - elements: 1 - offset: 0x1214
+	Prop: m_flFlashMaxAlpha - type: 1 - elements: 1 - offset: 0x1218
+	Prop: m_playerCostumeData - type: 5 - elements: 1 - offset: 0x1394
+	Prop: m_accessoryGameData - type: 5 - elements: 1 - offset: 0x1720
+	Prop: m_vecLastAimTargetPos - type: 2 - elements: 1 - offset: 0x17FC
+	Prop: m_hCurAimTarget - type: 0 - elements: 1 - offset: 0x1808
+	Prop: m_isFallingHeight - type: 0 - elements: 1 - offset: 0x1819
+	Prop: m_staminaUsageModifierAdder - type: 1 - elements: 1 - offset: 0x186C
+	Prop: m_staminaUsageModifierMultiplier - type: 1 - elements: 1 - offset: 0x1870
+	Prop: m_lastTeleportTime - type: 1 - elements: 1 - offset: 0x1880
+	Prop: m_attackMotionSpeedStatusEffect - type: 1 - elements: 1 - offset: 0x1884
+	Prop: m_moveSpeedModify - type: 1 - elements: 1 - offset: 0x1888
+	Prop: m_activatedSubWeaponIndex - type: 0 - elements: 1 - offset: 0x28DC
+	Prop: m_hLastThrownJavelin - type: 0 - elements: 1 - offset: 0x28E0
+	Prop: m_flBulletViewFinishTime - type: 1 - elements: 1 - offset: 0x28E4
+	Prop: m_bTouchingItem - type: 0 - elements: 1 - offset: 0x28E8
+	Prop: m_quickSlotGameData - type: 5 - elements: 1 - offset: 0x18B8
+	Prop: m_statGameData - type: 5 - elements: 1 - offset: 0x1BBC
+	Prop: m_spawnPendingExp - type: 0 - elements: 1 - offset: 0x1F9C
+	Prop: m_hShield - type: 0 - elements: 1 - offset: 0x1FA4
+	Prop: m_hGroundEntity - type: 0 - elements: 1 - offset: 0x238
+	Prop: m_isPushingPhysicsObject - type: 0 - elements: 1 - offset: 0x1FE0
+	Prop: m_LastPushingEntity - type: 0 - elements: 1 - offset: 0x1FE4
+	Prop: m_hHandActionTarget - type: 0 - elements: 1 - offset: 0x28EC
+	Prop: m_hLiftAttachEntity - type: 0 - elements: 1 - offset: 0x1FDC
+	Prop: m_actionStateSharedData - type: 5 - elements: 1 - offset: 0x2900
+	Prop: m_downResistanceRatioModifier - type: 1 - elements: 1 - offset: 0x2404
+	Prop: m_criticalHitRatioModifier - type: 1 - elements: 1 - offset: 0x2408
+	Prop: m_totalDamageRatioModifier - type: 1 - elements: 1 - offset: 0x2414
+	Prop: m_takenDamageReduceRatio - type: 1 - elements: 1 - offset: 0x2418
+	Prop: m_attackLatchRatioModifier - type: 1 - elements: 1 - offset: 0x241C
+	Prop: m_magicCriticalHitRatioModifier - type: 1 - elements: 1 - offset: 0x240C
+	Prop: m_isForceMagicCritical - type: 0 - elements: 1 - offset: 0x2410
+	Prop: m_itemAwakeningBonusATK - type: 0 - elements: 1 - offset: 0x2428
+	Prop: m_itemAwakeningBonusBalance - type: 0 - elements: 1 - offset: 0x242C
+	Prop: m_itemAwakeningDamageReduce - type: 1 - elements: 1 - offset: 0x2434
+	Prop: m_itemAwakeningDamageReduceBound - type: 1 - elements: 1 - offset: 0x2430
+	Prop: m_itemAwakeningProbabilityOF - type: 1 - elements: 1 - offset: 0x2438
+	Prop: m_itemAwakeningProbabilityDF - type: 1 - elements: 1 - offset: 0x243C
+	Prop: m_itemAwakeningEfxOF - type: 3 - elements: 1 - offset: 0x2440
+	Prop: m_itemAwakeningSoundOF - type: 3 - elements: 1 - offset: 0x2544
+	Prop: m_itemAwakeningEfxDF - type: 3 - elements: 1 - offset: 0x2648
+	Prop: m_itemAwakeningSoundDF - type: 3 - elements: 1 - offset: 0x274C
+	Prop: m_isInputDisabled - type: 0 - elements: 1 - offset: 0x2420
+	Prop: m_curLadderNormal - type: 2 - elements: 1 - offset: 0x2894
+	Prop: m_curLadderPosition - type: 2 - elements: 1 - offset: 0x28A0
+	Prop: m_curLadderState - type: 0 - elements: 1 - offset: 0x28AC
+	Prop: m_hasLadder_nextPlayerPos - type: 0 - elements: 1 - offset: 0x28B0
+	Prop: m_ladder_nextPlayerPos - type: 2 - elements: 1 - offset: 0x28B4
+	Prop: m_ladder_nextPlayerAng - type: 2 - elements: 1 - offset: 0x28C0
+	Prop: m_myTitleID - type: 0 - elements: 1 - offset: 0x201C
+	Prop: m_myTitleCount - type: 0 - elements: 1 - offset: 0x2020
+	Prop: m_guildName - type: 3 - elements: 1 - offset: 0x2024
+	Prop: m_quote - type: 3 - elements: 1 - offset: 0x2123
+	Prop: m_isCafe - type: 0 - elements: 1 - offset: 0x2222
+	Prop: m_isReturn - type: 0 - elements: 1 - offset: 0x2223
+	Prop: m_VIPCode - type: 0 - elements: 1 - offset: 0x2224
+	Prop: m_isEventJumping - type: 0 - elements: 1 - offset: 0x2228
+	Prop: m_freeTitleName - type: 3 - elements: 1 - offset: 0x2229
+	Prop: m_SubWeaponItemClass - type: 3 - elements: 1 - offset: 0x1B7A
+	Prop: m_hTargetEvilCore - type: 0 - elements: 1 - offset: 0x2328
+	Prop: m_hTargetCollect - type: 0 - elements: 1 - offset: 0x232C
+	Prop: m_hTargetFish - type: 0 - elements: 1 - offset: 0x2330
+	Prop: m_hReviveTarget - type: 0 - elements: 1 - offset: 0x2338
+	Prop: m_statusEffectSharedData - type: 5 - elements: 1 - offset: 0x2354
+	Prop: m_serverSideEffectSharedData - type: 5 - elements: 1 - offset: 0x23A8
+	Prop: m_cameraEnemyTarget - type: 0 - elements: 1 - offset: 0x2B84
+	Prop: m_eyeTarget - type: 0 - elements: 1 - offset: 0x2B88
+	Prop: m_eyeTargetPos - type: 2 - elements: 1 - offset: 0x2B8C
+	Prop: m_camLookAtTarget - type: 0 - elements: 1 - offset: 0x2B98
+	Prop: m_canStareEnemy - type: 0 - elements: 1 - offset: 0x2B9C
+	Prop: m_townActionState - type: 0 - elements: 1 - offset: 0x2BA0
+	Prop: m_townActionTargetPos - type: 2 - elements: 1 - offset: 0x2BA4
+	Prop: m_isAtTownCampfire - type: 0 - elements: 1 - offset: 0x2BB0
+	Prop: m_spSkillManager - type: 5 - elements: 1 - offset: 0x2BB8
+	Prop: m_hCampfireAnvil - type: 0 - elements: 1 - offset: 0x2D58
+	Prop: m_hSelectedPartyMember - type: 0 - elements: 1 - offset: 0x2D74
+	Prop: m_invincibleStatusEffectCount - type: 0 - elements: 1 - offset: 0x2D9C
+	Prop: m_superArmorStatusEffectCount - type: 0 - elements: 1 - offset: 0x2DA0
+	Prop: m_pvpGrappling - type: 5 - elements: 1 - offset: 0x2DC8
+	Prop: m_playerAnimStateEvent - type: 5 - elements: 1 - offset: 0x2DE8
+	Prop: m_pMetamorphosis - type: 5 - elements: 1 - offset: 0x2E70
+	Prop: m_hTargetVehicle - type: 0 - elements: 1 - offset: 0x3168
+	Prop: m_hTargetConstruction - type: 0 - elements: 1 - offset: 0x3184
+	Prop: m_isConstructing - type: 0 - elements: 1 - offset: 0x3188
+	Prop: m_isGathering - type: 0 - elements: 1 - offset: 0x3198
+	Prop: m_hTargetGatheringRock - type: 0 - elements: 1 - offset: 0x3194
+	Prop: m_hTargetManipulate - type: 0 - elements: 1 - offset: 0x319C
+	Prop: m_hFreeMatch - type: 0 - elements: 1 - offset: 0x31A0
+	Prop: m_isCameramanMode - type: 0 - elements: 1 - offset: 0x31A8
+	Prop: m_initiallyEquippedMainWeaponClass - type: 0 - elements: 1 - offset: 0x28D0
+	Prop: m_numCriticalHitCoupon - type: 0 - elements: 1 - offset: 0x31AC
+	Prop: m_lockCriticalHitCoupon - type: 0 - elements: 1 - offset: 0x31B0
+	Prop: m_isSequenceVelocityOverride - type: 0 - elements: 1 - offset: 0x31B1
+	Prop: m_moveSpeedScaleFactor - type: 1 - elements: 1 - offset: 0x31B4
+	Prop: m_lastGroundZ - type: 1 - elements: 1 - offset: 0x31BC
+	Prop: m_lastJumpZ - type: 1 - elements: 1 - offset: 0x31C0
+	Prop: m_isFearState - type: 0 - elements: 1 - offset: 0x1234
+	Prop: m_isReversedMovement - type: 0 - elements: 1 - offset: 0x31CB
+	Prop: m_alreadySetSpSkill - type: 0 - elements: 1 - offset: 0x1B4D
+Table: DT_HeroesPlayerEvy
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_scytheBindString - type: 5 - elements: 1 - offset: 0x3274
+	Prop: m_scytheDragRagdoll - type: 5 - elements: 1 - offset: 0x32B0
+	Prop: m_manaShield - type: 5 - elements: 1 - offset: 0x3210
+	Prop: m_curMagicCycle - type: 0 - elements: 1 - offset: 0x3650
+	Prop: m_chargeCoolTime - type: 1 - elements: 1 - offset: 0x3654
+	Prop: m_chargeCoolTime - type: 4 - elements: 20 - offset: 0x0
+	Prop: m_isBubbleBallBegined - type: 0 - elements: 1 - offset: 0x3310
+	Prop: m_reverseGravityDuration - type: 1 - elements: 1 - offset: 0x36AC
+Table: DT_HeroesPlayerFiona
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_HeroesPlayerKalok
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_rapidGrappling - type: 5 - elements: 1 - offset: 0x3210
+	Prop: m_duelControllerPlayer - type: 5 - elements: 1 - offset: 0x3278
+	Prop: m_weaponThrowable - type: 5 - elements: 1 - offset: 0x3350
+	Prop: m_isSPAttackRageMode - type: 0 - elements: 1 - offset: 0x3414
+Table: DT_HeroesPlayerKay
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_showAimGuide - type: 0 - elements: 1 - offset: 0x3210
+	Prop: m_curAimGuideVelocity - type: 1 - elements: 1 - offset: 0x321C
+	Prop: m_curAimGuideGravityScale - type: 1 - elements: 1 - offset: 0x3220
+	Prop: m_curAimGuideAngleBias - type: 2 - elements: 1 - offset: 0x3224
+	Prop: m_hMountCandidateMonster - type: 0 - elements: 1 - offset: 0x32B4
+	Prop: m_teleportIndicator - type: 0 - elements: 1 - offset: 0x3244
+	Prop: m_showBuckShotAimGuide - type: 0 - elements: 1 - offset: 0x32BD
+	Prop: m_curSkillCycle - type: 0 - elements: 1 - offset: 0x32DC
+	Prop: m_arrowStormTargetPos - type: 2 - elements: 1 - offset: 0x3248
+	Prop: m_skillid - type: 0 - elements: 1 - offset: 0x32E0
+	Prop: m_skillid - type: 4 - elements: 20 - offset: 0x0
+	Prop: m_isCrossgun - type: 0 - elements: 1 - offset: 0x3445
+	Prop: m_bulletCount - type: 0 - elements: 1 - offset: 0x3440
+	Prop: m_skill_bullet_six_Count - type: 0 - elements: 1 - offset: 0x346C
+	Prop: m_readyToBullet6 - type: 0 - elements: 1 - offset: 0x3464
+	Prop: m_skillPiercing_bulletCount - type: 0 - elements: 1 - offset: 0x3468
+	Prop: m_normalBullet_FullCount - type: 0 - elements: 1 - offset: 0x3470
+	Prop: m_readyToPiercing - type: 0 - elements: 1 - offset: 0x3465
+	Prop: m_isSensation - type: 0 - elements: 1 - offset: 0x34B1
+	Prop: m_isInsight - type: 0 - elements: 1 - offset: 0x34B2
+Table: DT_HeroesPlayerLethita
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_HeroesPlayerResource
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_HeroesPlayerVella
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_crossDoubleChecker - type: 0 - elements: 1 - offset: 0x324C
+	Prop: m_hCrossDoubleAttackTarget - type: 0 - elements: 1 - offset: 0x3250
+	Prop: m_hTempestTarget - type: 0 - elements: 1 - offset: 0x32EC
+	Prop: m_hCrossAttaker - type: 0 - elements: 1 - offset: 0x32F4
+	Prop: m_crossAttackSerial - type: 0 - elements: 1 - offset: 0x32F8
+	Prop: m_dualbladeActionRagdoll - type: 5 - elements: 1 - offset: 0x332C
+	Prop: m_hAutoGrapplingTarget - type: 0 - elements: 1 - offset: 0x337C
+	Prop: m_bAutoGrapplingParity - type: 0 - elements: 1 - offset: 0x3380
+	Prop: m_bSkillColdHeartStatusEffect - type: 0 - elements: 1 - offset: 0x33A0
+	Prop: m_hWeakPointTarget - type: 0 - elements: 1 - offset: 0x33B0
+	Prop: m_WeakPointHitBox - type: 0 - elements: 1 - offset: 0x33B4
+	Prop: m_DominateUsable - type: 0 - elements: 1 - offset: 0x33B8
+	Prop: m_hPolarisTarget - type: 0 - elements: 1 - offset: 0x33C4
+	Prop: m_PolarisProcessing - type: 0 - elements: 1 - offset: 0x33C8
+Table: DT_HeroesRagdollBlender
+	Prop: m_ragdollAngleArray - type: 2 - elements: 1 - offset: 0x4C8
+	Prop: m_ragdollAngleArray - type: 4 - elements: 24 - offset: 0x0
+	Prop: m_ragdollPosArray - type: 2 - elements: 1 - offset: 0x3A8
+	Prop: m_ragdollPosArray - type: 4 - elements: 24 - offset: 0x0
+	Prop: m_ragdollPos - type: 2 - elements: 1 - offset: 0x5E8
+	Prop: m_ragdollAngle - type: 2 - elements: 1 - offset: 0x5F4
+	Prop: m_ragdollForceVector - type: 2 - elements: 1 - offset: 0x600
+	Prop: m_ragdollForceBoneIndex - type: 0 - elements: 1 - offset: 0x60C
+	Prop: m_isBlendingEnabled - type: 0 - elements: 1 - offset: 0x610
+	Prop: m_isAllBlendingFactorZero - type: 0 - elements: 1 - offset: 0x611
+	Prop: m_isStatue - type: 0 - elements: 1 - offset: 0x612
+	Prop: m_useSequenceAsLocalBone - type: 0 - elements: 1 - offset: 0x613
+	Prop: m_unragdollStartTime - type: 1 - elements: 1 - offset: 0x614
+	Prop: m_unragdollTimeTotal - type: 1 - elements: 1 - offset: 0x618
+	Prop: m_unragdollYawBias - type: 1 - elements: 1 - offset: 0x61C
+	Prop: m_hParent - type: 0 - elements: 1 - offset: 0x620
+	Prop: m_ragdollNetType - type: 0 - elements: 1 - offset: 0x624
+Table: DT_HeroesRopeFast
+	Prop: m_hStartPoint - type: 0 - elements: 1 - offset: 0x3DC
+	Prop: m_hEndPoint - type: 0 - elements: 1 - offset: 0x3E0
+	Prop: m_iStartAttachment - type: 0 - elements: 1 - offset: 0x3E4
+	Prop: m_iEndAttachment - type: 0 - elements: 1 - offset: 0x3E6
+	Prop: m_Slack - type: 0 - elements: 1 - offset: 0x3B0
+	Prop: m_RopeLength - type: 0 - elements: 1 - offset: 0x3CC
+	Prop: m_fLockedPoints - type: 0 - elements: 1 - offset: 0x3D0
+	Prop: m_RopeFlags - type: 0 - elements: 1 - offset: 0x3A8
+	Prop: m_nSegments - type: 0 - elements: 1 - offset: 0x3BC
+	Prop: m_iRopeMaterialModel - type: 0 - elements: 1 - offset: 0x3C4
+	Prop: m_Subdiv - type: 0 - elements: 1 - offset: 0x3C8
+	Prop: m_TextureScale - type: 1 - elements: 1 - offset: 0x3B8
+	Prop: m_Width - type: 1 - elements: 1 - offset: 0x3B4
+	Prop: m_flScrollSpeed - type: 1 - elements: 1 - offset: 0x3D8
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0x340
+	Prop: moveparent - type: 0 - elements: 1 - offset: 0xF8
+	Prop: m_iParentAttachment - type: 0 - elements: 1 - offset: 0xED
+Table: DT_HeroesServerErg
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_Quantity - type: 0 - elements: 1 - offset: 0x60C
+Table: DT_HeroesShield
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_shieldMaterialData - type: 5 - elements: 1 - offset: 0x594
+	Prop: m_isBroken - type: 0 - elements: 1 - offset: 0x5B8
+	Prop: m_hParent - type: 0 - elements: 1 - offset: 0x5BC
+	Prop: m_normalModelName - type: 3 - elements: 1 - offset: 0x5C0
+	Prop: m_isShieldEquipped - type: 0 - elements: 1 - offset: 0x6C4
+	Prop: m_shieldUpdateBit - type: 0 - elements: 1 - offset: 0x6C5
+	Prop: m_maxDurability - type: 1 - elements: 1 - offset: 0x6C8
+	Prop: m_curDurability - type: 1 - elements: 1 - offset: 0x6CC
+	Prop: m_shieldClassName - type: 3 - elements: 1 - offset: 0x6D0
+Table: DT_HeroesSimpleRopeFast
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_HeroesTeam
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_HeroesTEEffectExecutor
+	Prop: m_efxFileName - type: 0 - elements: 1 - offset: 0xC
+	Prop: m_efxIndex - type: 0 - elements: 1 - offset: 0x10
+	Prop: m_hParent - type: 0 - elements: 1 - offset: 0x14
+Table: DT_HeroesTEParticleBase
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_position - type: 2 - elements: 1 - offset: 0x18
+	Prop: m_angle - type: 2 - elements: 1 - offset: 0x24
+	Prop: m_direction - type: 2 - elements: 1 - offset: 0x30
+	Prop: m_bone - type: 0 - elements: 1 - offset: 0x3C
+Table: DT_HeroesWorldMapInfo
+	Prop: m_treasureCount - type: 5 - elements: 1 - offset: 0x3A8
+	Prop: m_totalTreasureBox - type: 0 - elements: 1 - offset: 0x3F8
+	Prop: m_curOpendBox - type: 0 - elements: 1 - offset: 0x3FC
+	Prop: m_bossKilledList - type: 5 - elements: 1 - offset: 0x400
+Table: DT_HolyProp
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_noSave - type: 0 - elements: 1 - offset: 0x7F0
+Table: DT_HookshotHook
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_InfoCustomEyeTarget
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_isEnable - type: 0 - elements: 1 - offset: 0x3A8
+Table: DT_InfoLadderDismount
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_InfoLightingRelative
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_hLightingLandmark - type: 0 - elements: 1 - offset: 0x3A8
+Table: DT_LightGlow
+	Prop: m_clrRender - type: 0 - elements: 1 - offset: 0x20
+	Prop: m_nHorizontalSize - type: 0 - elements: 1 - offset: 0x3A8
+	Prop: m_nVerticalSize - type: 0 - elements: 1 - offset: 0x3AC
+	Prop: m_nMinDist - type: 0 - elements: 1 - offset: 0x3B0
+	Prop: m_nMaxDist - type: 0 - elements: 1 - offset: 0x3B4
+	Prop: m_nOuterMaxDist - type: 0 - elements: 1 - offset: 0x3B8
+	Prop: m_spawnflags - type: 0 - elements: 1 - offset: 0xB4
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0x340
+	Prop: m_angRotation - type: 2 - elements: 1 - offset: 0x34C
+	Prop: moveparent - type: 0 - elements: 1 - offset: 0xF8
+	Prop: m_flGlowProxySize - type: 1 - elements: 1 - offset: 0x3BC
+	Prop: HDRColorScale - type: 1 - elements: 1 - offset: 0x3C0
+Table: DT_MaterialModifyControl
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_szMaterialName - type: 3 - elements: 1 - offset: 0x3A8
+	Prop: m_szMaterialVar - type: 3 - elements: 1 - offset: 0x4A7
+	Prop: m_szMaterialVarValue - type: 3 - elements: 1 - offset: 0x5A6
+	Prop: m_iFrameStart - type: 0 - elements: 1 - offset: 0x6A8
+	Prop: m_iFrameEnd - type: 0 - elements: 1 - offset: 0x6AC
+	Prop: m_bWrap - type: 0 - elements: 1 - offset: 0x6B0
+	Prop: m_flFramerate - type: 1 - elements: 1 - offset: 0x6B4
+	Prop: m_bNewAnimCommandsSemaphore - type: 0 - elements: 1 - offset: 0x6B8
+	Prop: m_flFloatLerpStartValue - type: 1 - elements: 1 - offset: 0x6BC
+	Prop: m_flFloatLerpEndValue - type: 1 - elements: 1 - offset: 0x6C0
+	Prop: m_flFloatLerpTransitionTime - type: 1 - elements: 1 - offset: 0x6C4
+	Prop: m_nModifyMode - type: 0 - elements: 1 - offset: 0x6C8
+Table: DT_NeoMMOPC
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_costumeLoadable - type: 5 - elements: 1 - offset: 0xAE8
+	Prop: m_playerClass - type: 0 - elements: 1 - offset: 0xADC
+	Prop: m_NPCName - type: 3 - elements: 1 - offset: 0x1608
+	Prop: m_titleId - type: 0 - elements: 1 - offset: 0x1688
+	Prop: m_titleCount - type: 0 - elements: 1 - offset: 0x168C
+	Prop: m_guildName - type: 3 - elements: 1 - offset: 0x1690
+	Prop: m_guildSN - type: 0 - elements: 1 - offset: 0x1710
+	Prop: m_quote - type: 3 - elements: 1 - offset: 0x1714
+	Prop: m_isCafe - type: 0 - elements: 1 - offset: 0x1814
+	Prop: m_isReturn - type: 0 - elements: 1 - offset: 0x1815
+	Prop: m_VIPCode - type: 0 - elements: 1 - offset: 0x1818
+	Prop: m_guildSN - type: 0 - elements: 1 - offset: 0x1710
+	Prop: m_actionMessage - type: 5 - elements: 1 - offset: 0x181C
+	Prop: m_initOriginParity - type: 0 - elements: 1 - offset: 0x184C
+	Prop: m_summaryChangeParity - type: 0 - elements: 1 - offset: 0x1850
+	Prop: m_IsEventJumping - type: 0 - elements: 1 - offset: 0x1854
+	Prop: m_freeTitleName - type: 3 - elements: 1 - offset: 0x1855
+Table: DT_NPC_Character_Creation_Actor
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_costumeLoadable - type: 5 - elements: 1 - offset: 0x1EBC
+	Prop: m_hShield - type: 0 - elements: 1 - offset: 0x29DC
+Table: DT_NPC_Cragdigger
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_NPC_Fish
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_hOwner - type: 0 - elements: 1 - offset: 0x1F00
+	Prop: m_bMonster - type: 0 - elements: 1 - offset: 0x1F04
+Table: DT_NPC_Grimreaper
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_NPC_Guardian
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_NPC_HAVAN
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_thrownProp - type: 0 - elements: 1 - offset: 0x1F20
+Table: DT_NPC_HavanGiant
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_isCamLookAtMode - type: 0 - elements: 1 - offset: 0x1EB7
+Table: DT_NPC_Hornet
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_isBurstMode - type: 0 - elements: 1 - offset: 0x1EF1
+Table: DT_NPC_Kadan
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_madLevel - type: 0 - elements: 1 - offset: 0x1EC0
+Table: DT_NPC_Kobold
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_NPC_Mankind
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_costumeLoadable - type: 5 - elements: 1 - offset: 0x1EBC
+Table: DT_NPC_Octopus
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_isHead - type: 0 - elements: 1 - offset: 0x1EC0
+Table: DT_NPC_Pet
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_petName - type: 3 - elements: 1 - offset: 0x1EC0
+	Prop: m_petType - type: 0 - elements: 1 - offset: 0x1F40
+	Prop: m_defBreak - type: 0 - elements: 1 - offset: 0x1F6C
+	Prop: m_atkBalance - type: 0 - elements: 1 - offset: 0x1F70
+	Prop: m_hungerGauge - type: 0 - elements: 1 - offset: 0x1F74
+	Prop: m_resDmg - type: 0 - elements: 1 - offset: 0x1F7C
+	Prop: m_coolTimeUpdate - type: 0 - elements: 1 - offset: 0x1F44
+	Prop: m_messageFlag - type: 0 - elements: 1 - offset: 0x1F68
+	Prop: m_isDeadState - type: 0 - elements: 1 - offset: 0x1F64
+	Prop: m_slotCooltime - type: 0 - elements: 1 - offset: 0x1F48
+	Prop: m_slotCooltime - type: 4 - elements: 7 - offset: 0x0
+Table: DT_NPC_Pirate
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_NPC_Player
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_costumeLoadable - type: 5 - elements: 1 - offset: 0x1EC8
+	Prop: m_titleId - type: 0 - elements: 1 - offset: 0x29E8
+	Prop: m_titleCount - type: 0 - elements: 1 - offset: 0x29EC
+	Prop: m_guildName - type: 3 - elements: 1 - offset: 0x29F0
+	Prop: m_guildSN - type: 0 - elements: 1 - offset: 0x2A70
+	Prop: m_quote - type: 3 - elements: 1 - offset: 0x2A74
+	Prop: m_isCafe - type: 0 - elements: 1 - offset: 0x2B74
+	Prop: m_isReturn - type: 0 - elements: 1 - offset: 0x2B75
+	Prop: m_VIPCode - type: 0 - elements: 1 - offset: 0x2B78
+	Prop: m_guildSN - type: 0 - elements: 1 - offset: 0x2A70
+	Prop: m_playerClass - type: 0 - elements: 1 - offset: 0x2B7C
+	Prop: m_IsEventJumping - type: 0 - elements: 1 - offset: 0x2B80
+	Prop: m_freeTitleName - type: 3 - elements: 1 - offset: 0x2B81
+Table: DT_NPC_PlayerCutSceneActor
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_costumeLoadable - type: 5 - elements: 1 - offset: 0x1EBC
+Table: DT_NPC_PlayerForCharacterSelection
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_selectSlot - type: 0 - elements: 1 - offset: 0x2CD4
+	Prop: m_hShield - type: 0 - elements: 1 - offset: 0x2CD8
+Table: DT_NPC_PropGolem
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_updateHitboxCollisionCheckerID - type: 0 - elements: 1 - offset: 0x1F38
+	Prop: m_updateHitboxCollisionCheckerMins - type: 2 - elements: 1 - offset: 0x1F3C
+	Prop: m_updateHitboxCollisionCheckerMaxs - type: 2 - elements: 1 - offset: 0x1F48
+	Prop: m_attackDamageMultiply - type: 1 - elements: 1 - offset: 0x1FA4
+	Prop: m_attackDownDamageMultiply - type: 1 - elements: 1 - offset: 0x1FB0
+Table: DT_RollerMine
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_bIsOpen - type: 0 - elements: 1 - offset: 0x10DC
+	Prop: m_flActiveTime - type: 1 - elements: 1 - offset: 0x10E0
+	Prop: m_bHackedByAlyx - type: 0 - elements: 1 - offset: 0x10F9
+	Prop: m_bPowerDown - type: 0 - elements: 1 - offset: 0x1102
+Table: DT_NPC_Runner
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_isRatmanCharles - type: 0 - elements: 1 - offset: 0x1EBC
+Table: DT_NPC_Seiren
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_NPC_Snake
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_NPC_Succubus
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_bIsInHasteMode - type: 0 - elements: 1 - offset: 0x1EB5
+Table: DT_NPC_Troll2
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_ParticleFire
+	Prop: m_vOrigin - type: 2 - elements: 1 - offset: 0x3A8
+	Prop: m_vDirection - type: 2 - elements: 1 - offset: 0x3B4
+Table: DT_PhysBox
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_PhysBoxMultiplayer
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_iPhysicsMode - type: 0 - elements: 1 - offset: 0x52C
+	Prop: m_fMass - type: 1 - elements: 1 - offset: 0x530
+Table: DT_PhysicsProp
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_liftableType - type: 0 - elements: 1 - offset: 0x7BC
+	Prop: m_collideWithPlayerType - type: 0 - elements: 1 - offset: 0x7C0
+	Prop: m_bAwake - type: 0 - elements: 1 - offset: 0x7DD
+	Prop: m_collisionMins - type: 2 - elements: 1 - offset: 0x7A4
+	Prop: m_collisionMaxs - type: 2 - elements: 1 - offset: 0x7B0
+Table: DT_PhysicsPropMultiplayer
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_iPhysicsMode - type: 0 - elements: 1 - offset: 0x7E4
+	Prop: m_fMass - type: 1 - elements: 1 - offset: 0x7E8
+Table: DT_PhysMagnet
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_Plasma
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_flScale - type: 1 - elements: 1 - offset: 0x3AC
+	Prop: m_flScaleTime - type: 1 - elements: 1 - offset: 0x3B0
+	Prop: m_nFlags - type: 0 - elements: 1 - offset: 0x3B4
+	Prop: m_nPlasmaModelIndex - type: 0 - elements: 1 - offset: 0x3B8
+	Prop: m_nPlasmaModelIndex2 - type: 0 - elements: 1 - offset: 0x3BC
+	Prop: m_nGlowModelIndex - type: 0 - elements: 1 - offset: 0x3C0
+Table: DT_PlayerResource
+	Prop: m_iPing - type: 5 - elements: 1 - offset: 0x3A8
+	Prop: m_iPacketloss - type: 5 - elements: 1 - offset: 0x42C
+	Prop: m_iScore - type: 5 - elements: 1 - offset: 0x4B0
+	Prop: m_iDeaths - type: 5 - elements: 1 - offset: 0x534
+	Prop: m_bConnected - type: 5 - elements: 1 - offset: 0x5B8
+	Prop: m_iTeam - type: 5 - elements: 1 - offset: 0x63C
+	Prop: m_bAlive - type: 5 - elements: 1 - offset: 0x6C0
+	Prop: m_iHealth - type: 5 - elements: 1 - offset: 0x744
+Table: DT_PointCamera
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_FOV - type: 1 - elements: 1 - offset: 0x3B0
+	Prop: m_Resolution - type: 1 - elements: 1 - offset: 0x3B4
+	Prop: m_bFogEnable - type: 0 - elements: 1 - offset: 0x3B8
+	Prop: m_FogColor - type: 0 - elements: 1 - offset: 0x3B9
+	Prop: m_flFogStart - type: 1 - elements: 1 - offset: 0x3C0
+	Prop: m_flFogEnd - type: 1 - elements: 1 - offset: 0x3C4
+	Prop: m_bActive - type: 0 - elements: 1 - offset: 0x3C8
+	Prop: m_bUseScreenAspectRatio - type: 0 - elements: 1 - offset: 0x3C9
+Table: DT_PointCommentaryNode
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_bActive - type: 0 - elements: 1 - offset: 0x618
+	Prop: m_iszCommentaryFile - type: 3 - elements: 1 - offset: 0x59C
+	Prop: m_iszCommentaryFileNoHDR - type: 3 - elements: 1 - offset: 0x5A0
+	Prop: m_flStartTime - type: 1 - elements: 1 - offset: 0x61C
+	Prop: m_iszSpeakers - type: 3 - elements: 1 - offset: 0x620
+	Prop: m_iNodeNumber - type: 0 - elements: 1 - offset: 0x624
+	Prop: m_iNodeNumberMax - type: 0 - elements: 1 - offset: 0x628
+	Prop: m_hViewPosition - type: 0 - elements: 1 - offset: 0x5B0
+Table: DT_PointLandMark
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_landMarkName - type: 3 - elements: 1 - offset: 0x3AC
+Table: DT_PointLetterbox
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: beginTallRatio - type: 1 - elements: 1 - offset: 0x3A8
+	Prop: endTallRatio - type: 1 - elements: 1 - offset: 0x3AC
+	Prop: duration - type: 1 - elements: 1 - offset: 0x3B0
+	Prop: interpolator - type: 0 - elements: 1 - offset: 0x3B4
+	Prop: beginTallWide - type: 0 - elements: 1 - offset: 0x3B8
+	Prop: endTallWide - type: 0 - elements: 1 - offset: 0x3BC
+	Prop: running - type: 0 - elements: 1 - offset: 0x3C0
+	Prop: runAnimate - type: 0 - elements: 1 - offset: 0x3C4
+Table: DT_PointText
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: networkedTextContent - type: 3 - elements: 1 - offset: 0x3B0
+	Prop: networkedFontName - type: 3 - elements: 1 - offset: 0x4B0
+	Prop: fontSize - type: 0 - elements: 1 - offset: 0x4F0
+	Prop: color - type: 0 - elements: 1 - offset: 0x4F4
+	Prop: duration - type: 1 - elements: 1 - offset: 0x4F8
+	Prop: effect - type: 0 - elements: 1 - offset: 0x4FC
+	Prop: fadeOutDistMin - type: 1 - elements: 1 - offset: 0x500
+	Prop: fadeOutDistMax - type: 1 - elements: 1 - offset: 0x504
+	Prop: isShow - type: 0 - elements: 1 - offset: 0x508
+Table: DT_PoseController
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_hProps - type: 5 - elements: 1 - offset: 0x3A8
+	Prop: m_chPoseIndex - type: 5 - elements: 1 - offset: 0x3B8
+	Prop: m_bPoseValueParity - type: 0 - elements: 1 - offset: 0x3BD
+	Prop: m_fPoseValue - type: 1 - elements: 1 - offset: 0x3C8
+	Prop: m_fCycleFrequency - type: 1 - elements: 1 - offset: 0x3CC
+	Prop: m_nFModType - type: 0 - elements: 1 - offset: 0x3D0
+	Prop: m_fFModTimeOffset - type: 1 - elements: 1 - offset: 0x3D4
+	Prop: m_fFModRate - type: 1 - elements: 1 - offset: 0x3D8
+	Prop: m_fFModAmplitude - type: 1 - elements: 1 - offset: 0x3DC
+Table: DT_Precipitation
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_nPrecipType - type: 0 - elements: 1 - offset: 0x3A8
+Table: DT_PredictedViewModel
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_ProjectileGeneric
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_bGlow - type: 0 - elements: 1 - offset: 0x6B3
+	Prop: m_glowBeginTime - type: 1 - elements: 1 - offset: 0x6B4
+	Prop: m_glowDuration - type: 1 - elements: 1 - offset: 0x6B8
+Table: DT_Prop_Bunker
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_constructLevel - type: 0 - elements: 1 - offset: 0x5C4
+	Prop: m_protectMin - type: 2 - elements: 1 - offset: 0x5F0
+	Prop: m_protectMax - type: 2 - elements: 1 - offset: 0x5FC
+	Prop: m_destroyLevel - type: 0 - elements: 1 - offset: 0x610
+Table: DT_Prop_ReviveTorch
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_revivePlayerName - type: 3 - elements: 1 - offset: 0x5B4
+Table: DT_PropBallista
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_launchSpeed - type: 1 - elements: 1 - offset: 0x7F4
+	Prop: m_gravityMutiplier - type: 1 - elements: 1 - offset: 0x7F8
+	Prop: m_guideTrailShow - type: 0 - elements: 1 - offset: 0x7FC
+Table: DT_PropBallistaRope
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_ropeStartEntity - type: 0 - elements: 1 - offset: 0x8C4
+	Prop: m_ropeEndEntity - type: 0 - elements: 1 - offset: 0x8C8
+	Prop: m_ropeStartBone - type: 0 - elements: 1 - offset: 0x8CC
+	Prop: m_ropeEndBone - type: 0 - elements: 1 - offset: 0x8D0
+	Prop: m_ropeCreated - type: 0 - elements: 1 - offset: 0x8D4
+	Prop: m_projectileTouched - type: 0 - elements: 1 - offset: 0x8D5
+	Prop: m_isForceChangeView - type: 0 - elements: 1 - offset: 0x8D6
+Table: DT_PropBeanBag
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_PropCannon
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_hPlayer - type: 0 - elements: 1 - offset: 0x5AC
+	Prop: m_bEnterAnimOn - type: 0 - elements: 1 - offset: 0x59D
+	Prop: m_bExitAnimOn - type: 0 - elements: 1 - offset: 0x59E
+	Prop: m_vecEyeExitEndpoint - type: 2 - elements: 1 - offset: 0x5A0
+Table: DT_PropCatapult
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_showRangeTrail - type: 0 - elements: 1 - offset: 0x8C0
+	Prop: m_isFirst - type: 0 - elements: 1 - offset: 0x8C1
+	Prop: m_radiusTrailEffect - type: 3 - elements: 1 - offset: 0x8C2
+Table: DT_PropCTF
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_hLiftOwner - type: 0 - elements: 1 - offset: 0x810
+	Prop: m_status - type: 3 - elements: 1 - offset: 0x874
+Table: DT_PropGourd
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_PropJeep
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_bHeadlightIsOn - type: 0 - elements: 1 - offset: 0x8BD
+Table: DT_Prop_StormBunker
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_event - type: 0 - elements: 1 - offset: 0x7E0
+Table: DT_PropVehicleDriveable
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_hPlayer - type: 0 - elements: 1 - offset: 0x794
+	Prop: m_nSpeed - type: 0 - elements: 1 - offset: 0x798
+	Prop: m_nRPM - type: 0 - elements: 1 - offset: 0x79C
+	Prop: m_flThrottle - type: 1 - elements: 1 - offset: 0x7A0
+	Prop: m_nBoostTimeLeft - type: 0 - elements: 1 - offset: 0x7A4
+	Prop: m_nHasBoost - type: 0 - elements: 1 - offset: 0x7A8
+	Prop: m_nScannerDisabledWeapons - type: 0 - elements: 1 - offset: 0x7C6
+	Prop: m_nScannerDisabledVehicle - type: 0 - elements: 1 - offset: 0x7C7
+	Prop: m_bEnterAnimOn - type: 0 - elements: 1 - offset: 0x7D8
+	Prop: m_bExitAnimOn - type: 0 - elements: 1 - offset: 0x7D9
+	Prop: m_bUnableToFire - type: 0 - elements: 1 - offset: 0x7C4
+	Prop: m_vecEyeExitEndpoint - type: 2 - elements: 1 - offset: 0x7AC
+	Prop: m_bHasGun - type: 0 - elements: 1 - offset: 0x7C5
+	Prop: m_vecGunCrosshair - type: 2 - elements: 1 - offset: 0x7B8
+Table: DT_PvPFreeMatchRule
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_hPlayer1 - type: 0 - elements: 1 - offset: 0x3AC
+	Prop: m_hPlayer2 - type: 0 - elements: 1 - offset: 0x3B0
+	Prop: m_options - type: 0 - elements: 1 - offset: 0x3B4
+	Prop: m_options - type: 4 - elements: 4 - offset: 0x0
+	Prop: m_modifier1 - type: 0 - elements: 1 - offset: 0x3B8
+	Prop: m_modifier2 - type: 0 - elements: 1 - offset: 0x3BC
+	Prop: m_state1 - type: 0 - elements: 1 - offset: 0x3C0
+	Prop: m_state2 - type: 0 - elements: 1 - offset: 0x3C4
+Table: DT_RagdollManager
+	Prop: m_iMaxRagdollCount - type: 0 - elements: 1 - offset: 0x3A8
+Table: DT_Ragdoll
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_ragAngles - type: 2 - elements: 1 - offset: 0x9D4
+	Prop: m_ragAngles - type: 4 - elements: 24 - offset: 0x0
+	Prop: m_ragPos - type: 2 - elements: 1 - offset: 0x8B4
+	Prop: m_ragPos - type: 4 - elements: 24 - offset: 0x0
+	Prop: m_hUnragdoll - type: 0 - elements: 1 - offset: 0xAF8
+	Prop: m_flBlendWeight - type: 1 - elements: 1 - offset: 0xB24
+	Prop: m_nOverlaySequence - type: 0 - elements: 1 - offset: 0xB28
+Table: DT_Ragdoll_Attached
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_boneIndexAttached - type: 0 - elements: 1 - offset: 0xD70
+	Prop: m_ragdollAttachedObjectIndex - type: 0 - elements: 1 - offset: 0xD74
+	Prop: m_attachmentPointBoneSpace - type: 2 - elements: 1 - offset: 0xD78
+	Prop: m_attachmentPointRagdollSpace - type: 2 - elements: 1 - offset: 0xD84
+Table: DT_RandomBox
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_isShowState - type: 0 - elements: 1 - offset: 0x82C
+	Prop: m_needEffect - type: 0 - elements: 1 - offset: 0x82D
+Table: DT_RangeBaseProjectile
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_RatmanNextStage
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_isActivate - type: 0 - elements: 1 - offset: 0x5D5
+Table: DT_RopeKeyframe
+	Prop: m_hStartPoint - type: 0 - elements: 1 - offset: 0x3E4
+	Prop: m_hEndPoint - type: 0 - elements: 1 - offset: 0x3E8
+	Prop: m_iStartAttachment - type: 0 - elements: 1 - offset: 0x3EC
+	Prop: m_iEndAttachment - type: 0 - elements: 1 - offset: 0x3EE
+	Prop: m_Slack - type: 0 - elements: 1 - offset: 0x3B4
+	Prop: m_RopeLength - type: 0 - elements: 1 - offset: 0x3D0
+	Prop: m_fLockedPoints - type: 0 - elements: 1 - offset: 0x3D4
+	Prop: m_RopeFlags - type: 0 - elements: 1 - offset: 0x3AC
+	Prop: m_nSegments - type: 0 - elements: 1 - offset: 0x3C0
+	Prop: m_iRopeMaterialModel - type: 0 - elements: 1 - offset: 0x3C8
+	Prop: m_Subdiv - type: 0 - elements: 1 - offset: 0x3CC
+	Prop: m_TextureScale - type: 1 - elements: 1 - offset: 0x3BC
+	Prop: m_Width - type: 1 - elements: 1 - offset: 0x3B8
+	Prop: m_flScrollSpeed - type: 1 - elements: 1 - offset: 0x3DC
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0x340
+	Prop: moveparent - type: 0 - elements: 1 - offset: 0xF8
+	Prop: m_iParentAttachment - type: 0 - elements: 1 - offset: 0xED
+	Prop: m_useGlow - type: 0 - elements: 1 - offset: 0x3F0
+Table: DT_SandFog
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_activateMode - type: 0 - elements: 1 - offset: 0x594
+Table: DT_SceneEntity
+	Prop: m_nSceneStringIndex - type: 0 - elements: 1 - offset: 0x458
+	Prop: m_bIsPlayingBack - type: 0 - elements: 1 - offset: 0x400
+	Prop: m_bPaused - type: 0 - elements: 1 - offset: 0x401
+	Prop: m_flForceClientTime - type: 1 - elements: 1 - offset: 0x404
+	Prop: m_hActorList - type: 5 - elements: 1 - offset: 0x0
+Table: DT_ScriptGame
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_clientTags - type: 0 - elements: 1 - offset: 0x3AC
+	Prop: m_clientTags - type: 4 - elements: 32 - offset: 0x0
+Table: DT_ScriptGameCTF
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_statusArgs - type: 0 - elements: 1 - offset: 0x440
+	Prop: m_statusArgs - type: 4 - elements: 3 - offset: 0x0
+	Prop: m_scoreTime - type: 1 - elements: 1 - offset: 0x44C
+	Prop: m_statusTime - type: 1 - elements: 1 - offset: 0x450
+	Prop: m_statusLen - type: 1 - elements: 1 - offset: 0x454
+	Prop: m_tickStatusChanged - type: 0 - elements: 1 - offset: 0x458
+	Prop: m_players - type: 0 - elements: 1 - offset: 0x45C
+	Prop: m_players - type: 4 - elements: 32 - offset: 0x0
+	Prop: m_tags - type: 0 - elements: 1 - offset: 0x4DC
+	Prop: m_tags - type: 4 - elements: 32 - offset: 0x0
+	Prop: m_kills - type: 0 - elements: 1 - offset: 0x55C
+	Prop: m_kills - type: 4 - elements: 32 - offset: 0x0
+	Prop: m_deaths - type: 0 - elements: 1 - offset: 0x5DC
+	Prop: m_deaths - type: 4 - elements: 32 - offset: 0x0
+	Prop: m_scores - type: 0 - elements: 1 - offset: 0x65C
+	Prop: m_scores - type: 4 - elements: 32 - offset: 0x0
+	Prop: m_signets - type: 0 - elements: 1 - offset: 0x6DC
+	Prop: m_signets - type: 4 - elements: 32 - offset: 0x0
+	Prop: m_tickResultChanged - type: 0 - elements: 1 - offset: 0x75C
+Table: DT_ScriptGameDeathMatch
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_players - type: 0 - elements: 1 - offset: 0x440
+	Prop: m_players - type: 4 - elements: 32 - offset: 0x0
+	Prop: m_kills - type: 0 - elements: 1 - offset: 0x4C0
+	Prop: m_kills - type: 4 - elements: 32 - offset: 0x0
+	Prop: m_deaths - type: 0 - elements: 1 - offset: 0x540
+	Prop: m_deaths - type: 4 - elements: 32 - offset: 0x0
+	Prop: m_tickResultChanged - type: 0 - elements: 1 - offset: 0x5DC
+	Prop: m_gameLength - type: 1 - elements: 1 - offset: 0x5D0
+	Prop: m_teamSize - type: 0 - elements: 1 - offset: 0x5D4
+	Prop: m_endRoundTime - type: 0 - elements: 1 - offset: 0x5D8
+	Prop: m_pvpState - type: 0 - elements: 1 - offset: 0x5CC
+	Prop: m_playerCount - type: 0 - elements: 1 - offset: 0x5E0
+	Prop: m_pvpStartTime - type: 0 - elements: 1 - offset: 0x5C0
+	Prop: m_redSocore - type: 0 - elements: 1 - offset: 0x5C4
+	Prop: m_blueSocore - type: 0 - elements: 1 - offset: 0x5C8
+Table: DT_ScriptGameSurvivor
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_host - type: 0 - elements: 1 - offset: 0x440
+	Prop: m_leaderBlue - type: 0 - elements: 1 - offset: 0x444
+	Prop: m_leaderRed - type: 0 - elements: 1 - offset: 0x448
+	Prop: m_UIEvent - type: 0 - elements: 1 - offset: 0x44C
+	Prop: m_tickControlChanged - type: 0 - elements: 1 - offset: 0x450
+	Prop: m_statusArgs - type: 0 - elements: 1 - offset: 0x454
+	Prop: m_statusArgs - type: 4 - elements: 5 - offset: 0x0
+	Prop: m_scoreTime - type: 1 - elements: 1 - offset: 0x468
+	Prop: m_statusTime - type: 1 - elements: 1 - offset: 0x46C
+	Prop: m_statusLen - type: 1 - elements: 1 - offset: 0x470
+	Prop: m_tickStatusChanged - type: 0 - elements: 1 - offset: 0x474
+	Prop: m_players - type: 0 - elements: 1 - offset: 0x478
+	Prop: m_players - type: 4 - elements: 32 - offset: 0x0
+	Prop: m_kills - type: 0 - elements: 1 - offset: 0x4F8
+	Prop: m_kills - type: 4 - elements: 32 - offset: 0x0
+	Prop: m_deaths - type: 0 - elements: 1 - offset: 0x578
+	Prop: m_deaths - type: 4 - elements: 32 - offset: 0x0
+	Prop: m_damages - type: 0 - elements: 1 - offset: 0x5F8
+	Prop: m_damages - type: 4 - elements: 32 - offset: 0x0
+	Prop: m_isReady - type: 0 - elements: 1 - offset: 0x678
+	Prop: m_isReady - type: 4 - elements: 32 - offset: 0x0
+	Prop: m_tickResultChanged - type: 0 - elements: 1 - offset: 0x6F8
+	Prop: m_monsterBlue - type: 0 - elements: 1 - offset: 0x6FC
+	Prop: m_monsterRed - type: 0 - elements: 1 - offset: 0x700
+	Prop: m_monsterQueueOrderBlue - type: 0 - elements: 1 - offset: 0x704
+	Prop: m_monsterQueueOrderBlue - type: 4 - elements: 5 - offset: 0x0
+	Prop: m_monsterQueueOrderRed - type: 0 - elements: 1 - offset: 0x718
+	Prop: m_monsterQueueOrderRed - type: 4 - elements: 5 - offset: 0x0
+	Prop: m_tickMonsterChanged - type: 0 - elements: 1 - offset: 0x72C
+Table: DT_ScriptIntro
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecCameraView - type: 2 - elements: 1 - offset: 0x3C0
+	Prop: m_vecCameraViewAngles - type: 2 - elements: 1 - offset: 0x3CC
+	Prop: m_iBlendMode - type: 0 - elements: 1 - offset: 0x3D8
+	Prop: m_iNextBlendMode - type: 0 - elements: 1 - offset: 0x3DC
+	Prop: m_flNextBlendTime - type: 1 - elements: 1 - offset: 0x3E0
+	Prop: m_flBlendStartTime - type: 1 - elements: 1 - offset: 0x3E4
+	Prop: m_bActive - type: 0 - elements: 1 - offset: 0x3E8
+	Prop: m_iFOV - type: 0 - elements: 1 - offset: 0x3F8
+	Prop: m_iNextFOV - type: 0 - elements: 1 - offset: 0x3EC
+	Prop: m_flNextFOVBlendTime - type: 1 - elements: 1 - offset: 0x3F0
+	Prop: m_flFOVBlendStartTime - type: 1 - elements: 1 - offset: 0x3F4
+	Prop: m_bAlternateFOV - type: 0 - elements: 1 - offset: 0x3FC
+	Prop: m_flFadeAlpha - type: 1 - elements: 1 - offset: 0x40C
+	Prop: m_flFadeColor - type: 1 - elements: 1 - offset: 0x400
+	Prop: m_flFadeColor - type: 4 - elements: 3 - offset: 0x0
+	Prop: m_flFadeDuration - type: 1 - elements: 1 - offset: 0x410
+	Prop: m_hCameraEntity - type: 0 - elements: 1 - offset: 0x414
+Table: DT_ScriptListenerCTF
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_ScriptListenerDeathMatch
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_ScriptListenerSurvivor
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_ShadowControl
+	Prop: m_shadowDirection - type: 2 - elements: 1 - offset: 0x3A8
+	Prop: m_shadowColor - type: 0 - elements: 1 - offset: 0x3B4
+	Prop: m_flShadowMaxDist - type: 1 - elements: 1 - offset: 0x3B8
+	Prop: m_bDisableShadows - type: 0 - elements: 1 - offset: 0x3BC
+	Prop: m_flShadowLOD1Dist - type: 1 - elements: 1 - offset: 0x3C0
+	Prop: m_flShadowLOD2Dist - type: 1 - elements: 1 - offset: 0x3C4
+Table: DT_SmokeStack
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_SpreadSpeed - type: 1 - elements: 1 - offset: 0x3A8
+	Prop: m_Speed - type: 1 - elements: 1 - offset: 0x3AC
+	Prop: m_StartSize - type: 1 - elements: 1 - offset: 0x3B0
+	Prop: m_EndSize - type: 1 - elements: 1 - offset: 0x3B4
+	Prop: m_Rate - type: 1 - elements: 1 - offset: 0x3B8
+	Prop: m_JetLength - type: 1 - elements: 1 - offset: 0x3BC
+	Prop: m_bEmit - type: 0 - elements: 1 - offset: 0x3C4
+	Prop: m_flBaseSpread - type: 1 - elements: 1 - offset: 0x3C8
+	Prop: m_flRollSpeed - type: 1 - elements: 1 - offset: 0x3C0
+	Prop: m_DirLight.m_vPos - type: 2 - elements: 1 - offset: 0x3F8
+	Prop: m_DirLight.m_vColor - type: 2 - elements: 1 - offset: 0x404
+	Prop: m_DirLight.m_flIntensity - type: 1 - elements: 1 - offset: 0x410
+	Prop: m_AmbientLight.m_vPos - type: 2 - elements: 1 - offset: 0x3D4
+	Prop: m_AmbientLight.m_vColor - type: 2 - elements: 1 - offset: 0x3E0
+	Prop: m_AmbientLight.m_flIntensity - type: 1 - elements: 1 - offset: 0x3EC
+	Prop: m_vWind - type: 2 - elements: 1 - offset: 0x428
+	Prop: m_flTwist - type: 1 - elements: 1 - offset: 0x414
+	Prop: m_iMaterialModel - type: 0 - elements: 1 - offset: 0x41C
+Table: DT_SpotlightEnd
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_flLightScale - type: 1 - elements: 1 - offset: 0x3A8
+	Prop: m_Radius - type: 1 - elements: 1 - offset: 0x3AC
+Table: DT_Sprite
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_hAttachedToEntity - type: 0 - elements: 1 - offset: 0x3A8
+	Prop: m_nAttachment - type: 0 - elements: 1 - offset: 0x3AC
+	Prop: m_flScaleTime - type: 1 - elements: 1 - offset: 0x3CC
+	Prop: m_flSpriteScale - type: 1 - elements: 1 - offset: 0x3C8
+	Prop: m_flGlowProxySize - type: 1 - elements: 1 - offset: 0x3D4
+	Prop: m_flHDRColorScale - type: 1 - elements: 1 - offset: 0x3D8
+	Prop: m_flSpriteFramerate - type: 1 - elements: 1 - offset: 0x3B0
+	Prop: m_flFrame - type: 1 - elements: 1 - offset: 0x3B4
+	Prop: m_flMaxFrame - type: 1 - elements: 1 - offset: 0x3B8
+	Prop: m_flBrightnessTime - type: 1 - elements: 1 - offset: 0x3C4
+	Prop: m_nBrightness - type: 0 - elements: 1 - offset: 0x3C0
+	Prop: m_bWorldSpaceScale - type: 0 - elements: 1 - offset: 0x3D0
+	Prop: m_zBias - type: 1 - elements: 1 - offset: 0x3DC
+	Prop: m_fadeMinDist - type: 1 - elements: 1 - offset: 0x3E0
+	Prop: m_fadeMaxDist - type: 1 - elements: 1 - offset: 0x3E4
+Table: DT_SpriteTrail
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_flLifeTime - type: 1 - elements: 1 - offset: 0x404
+	Prop: m_flBeginTime - type: 1 - elements: 1 - offset: 0x408
+	Prop: m_flStartWidth - type: 1 - elements: 1 - offset: 0x40C
+	Prop: m_flEndWidth - type: 1 - elements: 1 - offset: 0x410
+	Prop: m_flStartWidthVariance - type: 1 - elements: 1 - offset: 0x414
+	Prop: m_flTextureRes - type: 1 - elements: 1 - offset: 0x418
+	Prop: m_flMinFadeLength - type: 1 - elements: 1 - offset: 0x41C
+	Prop: m_vecSkyboxOrigin - type: 2 - elements: 1 - offset: 0x420
+	Prop: m_flSkyboxScale - type: 1 - elements: 1 - offset: 0x42C
+	Prop: m_nStepCountReset - type: 0 - elements: 1 - offset: 0x430
+	Prop: m_isEmitStopped - type: 0 - elements: 1 - offset: 0x434
+Table: DT_SteamJet
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_SpreadSpeed - type: 1 - elements: 1 - offset: 0x3A8
+	Prop: m_Speed - type: 1 - elements: 1 - offset: 0x3AC
+	Prop: m_StartSize - type: 1 - elements: 1 - offset: 0x3B0
+	Prop: m_EndSize - type: 1 - elements: 1 - offset: 0x3B4
+	Prop: m_Rate - type: 1 - elements: 1 - offset: 0x3B8
+	Prop: m_JetLength - type: 1 - elements: 1 - offset: 0x3BC
+	Prop: m_bEmit - type: 0 - elements: 1 - offset: 0x3C0
+	Prop: m_bFaceLeft - type: 0 - elements: 1 - offset: 0x3C4
+	Prop: m_nType - type: 0 - elements: 1 - offset: 0x3C8
+	Prop: m_spawnflags - type: 0 - elements: 1 - offset: 0xB4
+	Prop: m_flRollSpeed - type: 1 - elements: 1 - offset: 0x3CC
+Table: DT_Sun
+	Prop: m_clrRender - type: 0 - elements: 1 - offset: 0x20
+	Prop: m_clrOverlay - type: 0 - elements: 1 - offset: 0x3D0
+	Prop: m_vDirection - type: 2 - elements: 1 - offset: 0x3A8
+	Prop: m_bOn - type: 0 - elements: 1 - offset: 0x3D4
+	Prop: m_nSize - type: 0 - elements: 1 - offset: 0x3C8
+	Prop: m_nOverlaySize - type: 0 - elements: 1 - offset: 0x3CC
+	Prop: m_nMaterial - type: 0 - elements: 1 - offset: 0x3D8
+	Prop: m_nOverlayMaterial - type: 0 - elements: 1 - offset: 0x3DC
+	Prop: HDRColorScale - type: 1 - elements: 1 - offset: 0x3E0
+	Prop: m_flPitch - type: 1 - elements: 1 - offset: 0x3C0
+	Prop: m_flYaw - type: 1 - elements: 1 - offset: 0x3C4
+	Prop: m_shaftsIsEnabled - type: 0 - elements: 1 - offset: 0x3E4
+	Prop: m_shaftsSpread - type: 1 - elements: 1 - offset: 0x3E8
+	Prop: m_shaftsCutRange - type: 1 - elements: 1 - offset: 0x3EC
+	Prop: m_shaftsShaftsWeight - type: 1 - elements: 1 - offset: 0x3F0
+	Prop: m_shaftsColorScale - type: 1 - elements: 1 - offset: 0x3F4
+	Prop: m_shaftsMaskWeight - type: 1 - elements: 1 - offset: 0x3F8
+Table: DT_Team
+	Prop: m_iTeamNum - type: 0 - elements: 1 - offset: 0x3FC
+	Prop: m_iScore - type: 0 - elements: 1 - offset: 0x3F0
+	Prop: m_szTeamname - type: 3 - elements: 1 - offset: 0x3D0
+	Prop: player_array_element - type: 0 - elements: 1 - offset: 0x0
+	Prop: "player_array" - type: 4 - elements: 32 - offset: 0x0
+Table: DT_TEArmorRicochet
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_BaseBeam
+	Prop: m_nModelIndex - type: 0 - elements: 1 - offset: 0xC
+	Prop: m_nHaloIndex - type: 0 - elements: 1 - offset: 0x10
+	Prop: m_nStartFrame - type: 0 - elements: 1 - offset: 0x14
+	Prop: m_nFrameRate - type: 0 - elements: 1 - offset: 0x18
+	Prop: m_fLife - type: 1 - elements: 1 - offset: 0x1C
+	Prop: m_fWidth - type: 1 - elements: 1 - offset: 0x20
+	Prop: m_fEndWidth - type: 1 - elements: 1 - offset: 0x24
+	Prop: m_nFadeLength - type: 0 - elements: 1 - offset: 0x28
+	Prop: m_fAmplitude - type: 1 - elements: 1 - offset: 0x2C
+	Prop: m_nSpeed - type: 0 - elements: 1 - offset: 0x40
+	Prop: r - type: 0 - elements: 1 - offset: 0x30
+	Prop: g - type: 0 - elements: 1 - offset: 0x34
+	Prop: b - type: 0 - elements: 1 - offset: 0x38
+	Prop: a - type: 0 - elements: 1 - offset: 0x3C
+	Prop: m_nFlags - type: 0 - elements: 1 - offset: 0x44
+Table: DT_TEBeamEntPoint
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_nStartEntity - type: 0 - elements: 1 - offset: 0x48
+	Prop: m_nEndEntity - type: 0 - elements: 1 - offset: 0x58
+	Prop: m_vecStartPoint - type: 2 - elements: 1 - offset: 0x4C
+	Prop: m_vecEndPoint - type: 2 - elements: 1 - offset: 0x5C
+Table: DT_TEBeamEnts
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_nStartEntity - type: 0 - elements: 1 - offset: 0x48
+	Prop: m_nEndEntity - type: 0 - elements: 1 - offset: 0x4C
+Table: DT_TEBeamFollow
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_iEntIndex - type: 0 - elements: 1 - offset: 0x48
+Table: DT_TEBeamLaser
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_nStartEntity - type: 0 - elements: 1 - offset: 0x48
+	Prop: m_nEndEntity - type: 0 - elements: 1 - offset: 0x4C
+Table: DT_TEBeamPoints
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecStartPoint - type: 2 - elements: 1 - offset: 0x48
+	Prop: m_vecEndPoint - type: 2 - elements: 1 - offset: 0x54
+Table: DT_TEBeamRing
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_nStartEntity - type: 0 - elements: 1 - offset: 0x48
+	Prop: m_nEndEntity - type: 0 - elements: 1 - offset: 0x4C
+Table: DT_TEBeamRingPoint
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecCenter - type: 2 - elements: 1 - offset: 0x48
+	Prop: m_flStartRadius - type: 1 - elements: 1 - offset: 0x54
+	Prop: m_flEndRadius - type: 1 - elements: 1 - offset: 0x58
+Table: DT_TEBeamSpline
+	Prop: m_nPoints - type: 0 - elements: 1 - offset: 0xCC
+	Prop: m_vecPoints - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_vecPoints - type: 4 - elements: 16 - offset: 0x0
+Table: DT_TEBloodSprite
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_vecDirection - type: 2 - elements: 1 - offset: 0x18
+	Prop: r - type: 0 - elements: 1 - offset: 0x2C
+	Prop: g - type: 0 - elements: 1 - offset: 0x30
+	Prop: b - type: 0 - elements: 1 - offset: 0x34
+	Prop: a - type: 0 - elements: 1 - offset: 0x38
+	Prop: m_nSprayModel - type: 0 - elements: 1 - offset: 0x24
+	Prop: m_nDropModel - type: 0 - elements: 1 - offset: 0x28
+	Prop: m_nSize - type: 0 - elements: 1 - offset: 0x3C
+Table: DT_TEBloodStream
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecDirection - type: 2 - elements: 1 - offset: 0x18
+	Prop: r - type: 0 - elements: 1 - offset: 0x24
+	Prop: g - type: 0 - elements: 1 - offset: 0x28
+	Prop: b - type: 0 - elements: 1 - offset: 0x2C
+	Prop: a - type: 0 - elements: 1 - offset: 0x30
+	Prop: m_nAmount - type: 0 - elements: 1 - offset: 0x34
+Table: DT_TEBreakModel
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_angRotation[0] - type: 1 - elements: 1 - offset: 0x30
+	Prop: m_angRotation[1] - type: 1 - elements: 1 - offset: 0x34
+	Prop: m_angRotation[2] - type: 1 - elements: 1 - offset: 0x38
+	Prop: m_vecSize - type: 2 - elements: 1 - offset: 0x18
+	Prop: m_vecVelocity - type: 2 - elements: 1 - offset: 0x24
+	Prop: m_nModelIndex - type: 0 - elements: 1 - offset: 0x40
+	Prop: m_nRandomization - type: 0 - elements: 1 - offset: 0x3C
+	Prop: m_nCount - type: 0 - elements: 1 - offset: 0x44
+	Prop: m_fTime - type: 1 - elements: 1 - offset: 0x48
+	Prop: m_nFlags - type: 0 - elements: 1 - offset: 0x4C
+Table: DT_TEBSPDecal
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_nEntity - type: 0 - elements: 1 - offset: 0x18
+	Prop: m_nIndex - type: 0 - elements: 1 - offset: 0x1C
+Table: DT_TEBubbles
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecMins - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_vecMaxs - type: 2 - elements: 1 - offset: 0x18
+	Prop: m_nModelIndex - type: 0 - elements: 1 - offset: 0x28
+	Prop: m_fHeight - type: 1 - elements: 1 - offset: 0x24
+	Prop: m_nCount - type: 0 - elements: 1 - offset: 0x2C
+	Prop: m_fSpeed - type: 1 - elements: 1 - offset: 0x30
+Table: DT_TEBubbleTrail
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecMins - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_vecMaxs - type: 2 - elements: 1 - offset: 0x18
+	Prop: m_nModelIndex - type: 0 - elements: 1 - offset: 0x28
+	Prop: m_flWaterZ - type: 1 - elements: 1 - offset: 0x24
+	Prop: m_nCount - type: 0 - elements: 1 - offset: 0x2C
+	Prop: m_fSpeed - type: 1 - elements: 1 - offset: 0x30
+Table: DT_TEDecal
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_vecStart - type: 2 - elements: 1 - offset: 0x18
+	Prop: m_nEntity - type: 0 - elements: 1 - offset: 0x24
+	Prop: m_nHitbox - type: 0 - elements: 1 - offset: 0x28
+	Prop: m_nIndex - type: 0 - elements: 1 - offset: 0x2C
+Table: DT_TEDust
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_flSize - type: 1 - elements: 1 - offset: 0x18
+	Prop: m_flSpeed - type: 1 - elements: 1 - offset: 0x1C
+	Prop: m_vecDirection - type: 2 - elements: 1 - offset: 0x20
+	Prop: m_color - type: 0 - elements: 1 - offset: 0x2C
+Table: DT_TEDynamicLight
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0xC
+	Prop: r - type: 0 - elements: 1 - offset: 0x1C
+	Prop: g - type: 0 - elements: 1 - offset: 0x20
+	Prop: b - type: 0 - elements: 1 - offset: 0x24
+	Prop: exponent - type: 0 - elements: 1 - offset: 0x28
+	Prop: m_fRadius - type: 1 - elements: 1 - offset: 0x18
+	Prop: m_fTime - type: 1 - elements: 1 - offset: 0x2C
+	Prop: m_fDecay - type: 1 - elements: 1 - offset: 0x30
+	Prop: m_bCheap - type: 0 - elements: 1 - offset: 0x34
+Table: DT_TEEffectDispatch
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_EffectData - type: 5 - elements: 1 - offset: 0xC
+Table: DT_TEEffectEvent
+	Prop: m_hAnimating - type: 0 - elements: 1 - offset: 0xC
+	Prop: m_event - type: 0 - elements: 1 - offset: 0x10
+	Prop: m_effectGroup - type: 0 - elements: 1 - offset: 0x14
+	Prop: m_effectFileName - type: 0 - elements: 1 - offset: 0x18
+Table: DT_TEEnergySplash
+	Prop: m_vecPos - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_vecDir - type: 2 - elements: 1 - offset: 0x18
+	Prop: m_bExplosive - type: 0 - elements: 1 - offset: 0x24
+Table: DT_TEExplosion
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_nModelIndex - type: 0 - elements: 1 - offset: 0x18
+	Prop: m_fScale - type: 1 - elements: 1 - offset: 0x1C
+	Prop: m_nFrameRate - type: 0 - elements: 1 - offset: 0x20
+	Prop: m_nFlags - type: 0 - elements: 1 - offset: 0x24
+	Prop: m_vecNormal - type: 2 - elements: 1 - offset: 0x28
+	Prop: m_chMaterialType - type: 0 - elements: 1 - offset: 0x34
+	Prop: m_nRadius - type: 0 - elements: 1 - offset: 0x38
+	Prop: m_nMagnitude - type: 0 - elements: 1 - offset: 0x3C
+Table: DT_TEFizz
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_nEntity - type: 0 - elements: 1 - offset: 0xC
+	Prop: m_nModelIndex - type: 0 - elements: 1 - offset: 0x10
+	Prop: m_nDensity - type: 0 - elements: 1 - offset: 0x14
+	Prop: m_nCurrent - type: 0 - elements: 1 - offset: 0x18
+Table: DT_TEFootprintDecal
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_vecDirection - type: 2 - elements: 1 - offset: 0x18
+	Prop: m_nEntity - type: 0 - elements: 1 - offset: 0x24
+	Prop: m_nIndex - type: 0 - elements: 1 - offset: 0x28
+	Prop: m_chMaterialType - type: 0 - elements: 1 - offset: 0x2C
+Table: DT_TEGaussExplosion
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_nType - type: 0 - elements: 1 - offset: 0x18
+	Prop: m_vecDirection - type: 2 - elements: 1 - offset: 0x1C
+Table: DT_TEGlowSprite
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_nModelIndex - type: 0 - elements: 1 - offset: 0x18
+	Prop: m_fScale - type: 1 - elements: 1 - offset: 0x1C
+	Prop: m_fLife - type: 1 - elements: 1 - offset: 0x20
+	Prop: m_nBrightness - type: 0 - elements: 1 - offset: 0x24
+Table: DT_TEHeroesEFXBlood
+	Prop: m_offset - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_normal - type: 2 - elements: 1 - offset: 0x18
+	Prop: m_magnitude - type: 1 - elements: 1 - offset: 0x24
+	Prop: m_hParent - type: 0 - elements: 1 - offset: 0x28
+	Prop: m_hitboxBone - type: 0 - elements: 1 - offset: 0x2C
+	Prop: m_damageType - type: 0 - elements: 1 - offset: 0x30
+Table: DT_TEImpact
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_vecNormal - type: 2 - elements: 1 - offset: 0x18
+	Prop: m_iType - type: 0 - elements: 1 - offset: 0x24
+Table: DT_TEKillPlayerAttachments
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_nPlayer - type: 0 - elements: 1 - offset: 0xC
+Table: DT_TELargeFunnel
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_nModelIndex - type: 0 - elements: 1 - offset: 0x18
+	Prop: m_nReversed - type: 0 - elements: 1 - offset: 0x1C
+Table: DT_TEMetalSparks
+	Prop: m_vecPos - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_vecDir - type: 2 - elements: 1 - offset: 0x18
+Table: DT_TEMuzzleFlash
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_vecAngles - type: 2 - elements: 1 - offset: 0x18
+	Prop: m_flScale - type: 1 - elements: 1 - offset: 0x24
+	Prop: m_nType - type: 0 - elements: 1 - offset: 0x28
+Table: DT_TEParticleSystem
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecOrigin[0] - type: 1 - elements: 1 - offset: 0xC
+	Prop: m_vecOrigin[1] - type: 1 - elements: 1 - offset: 0x10
+	Prop: m_vecOrigin[2] - type: 1 - elements: 1 - offset: 0x14
+Table: DT_TEPhysicsProp
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_angRotation[0] - type: 1 - elements: 1 - offset: 0x18
+	Prop: m_angRotation[1] - type: 1 - elements: 1 - offset: 0x1C
+	Prop: m_angRotation[2] - type: 1 - elements: 1 - offset: 0x20
+	Prop: m_vecVelocity - type: 2 - elements: 1 - offset: 0x24
+	Prop: m_nModelIndex - type: 0 - elements: 1 - offset: 0x30
+	Prop: m_nSkin - type: 0 - elements: 1 - offset: 0x34
+	Prop: m_nFlags - type: 0 - elements: 1 - offset: 0x38
+	Prop: m_nEffects - type: 0 - elements: 1 - offset: 0x3C
+	Prop: m_disposeDelay - type: 1 - elements: 1 - offset: 0x40
+Table: DT_TEPlayerDecal
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0x10
+	Prop: m_nEntity - type: 0 - elements: 1 - offset: 0x1C
+	Prop: m_nPlayer - type: 0 - elements: 1 - offset: 0xC
+Table: DT_TEProjectedDecal
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_angRotation - type: 2 - elements: 1 - offset: 0x20
+	Prop: m_flDistance - type: 1 - elements: 1 - offset: 0x1C
+	Prop: m_nIndex - type: 0 - elements: 1 - offset: 0x18
+Table: DT_TEShatterSurface
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_vecAngles - type: 2 - elements: 1 - offset: 0x18
+	Prop: m_vecForce - type: 2 - elements: 1 - offset: 0x24
+	Prop: m_vecForcePos - type: 2 - elements: 1 - offset: 0x30
+	Prop: m_flWidth - type: 1 - elements: 1 - offset: 0x3C
+	Prop: m_flHeight - type: 1 - elements: 1 - offset: 0x40
+	Prop: m_flShardSize - type: 1 - elements: 1 - offset: 0x44
+	Prop: m_nSurfaceType - type: 0 - elements: 1 - offset: 0x48
+	Prop: m_uchFrontColor[0] - type: 0 - elements: 1 - offset: 0x4C
+	Prop: m_uchFrontColor[1] - type: 0 - elements: 1 - offset: 0x4D
+	Prop: m_uchFrontColor[2] - type: 0 - elements: 1 - offset: 0x4E
+	Prop: m_uchBackColor[0] - type: 0 - elements: 1 - offset: 0x4F
+	Prop: m_uchBackColor[1] - type: 0 - elements: 1 - offset: 0x50
+	Prop: m_uchBackColor[2] - type: 0 - elements: 1 - offset: 0x51
+Table: DT_TEShowLine
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecEnd - type: 2 - elements: 1 - offset: 0x18
+Table: DT_Tesla
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_SoundName - type: 3 - elements: 1 - offset: 0x3AC
+	Prop: m_iszSpriteName - type: 3 - elements: 1 - offset: 0x3DC
+Table: DT_TESmoke
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_nModelIndex - type: 0 - elements: 1 - offset: 0x18
+	Prop: m_fScale - type: 1 - elements: 1 - offset: 0x1C
+	Prop: m_nFrameRate - type: 0 - elements: 1 - offset: 0x20
+Table: DT_TESparks
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_nMagnitude - type: 0 - elements: 1 - offset: 0x18
+	Prop: m_nTrailLength - type: 0 - elements: 1 - offset: 0x1C
+	Prop: m_vecDir - type: 2 - elements: 1 - offset: 0x20
+Table: DT_TESprite
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_nModelIndex - type: 0 - elements: 1 - offset: 0x18
+	Prop: m_fScale - type: 1 - elements: 1 - offset: 0x1C
+	Prop: m_nBrightness - type: 0 - elements: 1 - offset: 0x20
+Table: DT_TESpriteSpray
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_vecDirection - type: 2 - elements: 1 - offset: 0x18
+	Prop: m_nModelIndex - type: 0 - elements: 1 - offset: 0x24
+	Prop: m_fNoise - type: 1 - elements: 1 - offset: 0x2C
+	Prop: m_nSpeed - type: 0 - elements: 1 - offset: 0x28
+	Prop: m_nCount - type: 0 - elements: 1 - offset: 0x30
+Table: DT_ProxyToggle
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: blah - type: 5 - elements: 1 - offset: 0x0
+Table: DT_TestTraceline
+	Prop: m_clrRender - type: 0 - elements: 1 - offset: 0x20
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0x340
+	Prop: m_angRotation[0] - type: 1 - elements: 1 - offset: 0x34C
+	Prop: m_angRotation[1] - type: 1 - elements: 1 - offset: 0x350
+	Prop: m_angRotation[2] - type: 1 - elements: 1 - offset: 0x354
+	Prop: moveparent - type: 0 - elements: 1 - offset: 0xF8
+Table: DT_TEWorldDecal
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_vecOrigin - type: 2 - elements: 1 - offset: 0xC
+	Prop: m_nIndex - type: 0 - elements: 1 - offset: 0x18
+Table: DT_TimebombProjectile
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: detonateTime - type: 1 - elements: 1 - offset: 0x824
+	Prop: m_nSkin - type: 0 - elements: 1 - offset: 0x0
+Table: DT_PropManipulator
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_TreasureBox
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_isShowState - type: 0 - elements: 1 - offset: 0x82C
+Table: DT_TriggerCamera
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_fov - type: 1 - elements: 1 - offset: 0x3F8
+	Prop: m_enableFovAttachment - type: 0 - elements: 1 - offset: 0x3FC
+	Prop: m_iParentFovAttachment - type: 0 - elements: 1 - offset: 0x400
+Table: DT_TriggerEnvNPCSpawner
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_activatedEffectNameNS - type: 3 - elements: 1 - offset: 0x608
+	Prop: m_deactivatedEffectNameNS - type: 3 - elements: 1 - offset: 0x70C
+	Prop: m_activated - type: 0 - elements: 1 - offset: 0x810
+Table: DT_TriggerMoveSector
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_activatedEffectNameNS - type: 3 - elements: 1 - offset: 0x5FC
+	Prop: m_deactivatedEffectNameNS - type: 3 - elements: 1 - offset: 0x700
+	Prop: m_hideEffectNameNS - type: 3 - elements: 1 - offset: 0x804
+	Prop: m_triggerName - type: 3 - elements: 1 - offset: 0x908
+	Prop: m_activateState - type: 0 - elements: 1 - offset: 0xA0C
+Table: DT_TriggerSequenceAction
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_activatedEffectNameNS - type: 3 - elements: 1 - offset: 0x608
+	Prop: m_deactivatedEffectNameNS - type: 3 - elements: 1 - offset: 0x70C
+	Prop: m_launchedEffectNameNS - type: 3 - elements: 1 - offset: 0x810
+	Prop: m_activated - type: 0 - elements: 1 - offset: 0x914
+	Prop: m_launched - type: 0 - elements: 1 - offset: 0x915
+Table: DT_VGuiScreen
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_flWidth - type: 1 - elements: 1 - offset: 0x3AC
+	Prop: m_flHeight - type: 1 - elements: 1 - offset: 0x3B0
+	Prop: m_nAttachmentIndex - type: 0 - elements: 1 - offset: 0x3B8
+	Prop: m_nPanelName - type: 0 - elements: 1 - offset: 0x3B4
+	Prop: m_fScreenFlags - type: 0 - elements: 1 - offset: 0x3C0
+	Prop: m_nOverlayMaterial - type: 0 - elements: 1 - offset: 0x3BC
+Table: DT_VguiTexturePanel
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_material - type: 3 - elements: 1 - offset: 0x3AC
+	Prop: width - type: 0 - elements: 1 - offset: 0x4AC
+	Prop: height - type: 0 - elements: 1 - offset: 0x4B0
+	Prop: align - type: 0 - elements: 1 - offset: 0x4B4
+	Prop: offsetx - type: 0 - elements: 1 - offset: 0x4B8
+	Prop: offsety - type: 0 - elements: 1 - offset: 0x4BC
+	Prop: entityid - type: 0 - elements: 1 - offset: 0x4C8
+	Prop: duration - type: 1 - elements: 1 - offset: 0x4CC
+	Prop: fadein - type: 1 - elements: 1 - offset: 0x4D0
+	Prop: fadeout - type: 1 - elements: 1 - offset: 0x4D4
+	Prop: showpanelproxy - type: 0 - elements: 1 - offset: 0x4C0
+	Prop: hidepanelproxy - type: 0 - elements: 1 - offset: 0x4C4
+Table: DT_WaterBullet
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_WaterLODControl
+	Prop: m_flCheapWaterStartDistance - type: 1 - elements: 1 - offset: 0x3A8
+	Prop: m_flCheapWaterEndDistance - type: 1 - elements: 1 - offset: 0x3AC
+Table: DT_WeaponBareHand
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_WeaponBladeBase
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_isDualType - type: 0 - elements: 1 - offset: 0x6D4
+	Prop: m_hChainR - type: 0 - elements: 1 - offset: 0x6D8
+	Prop: m_hChainL - type: 0 - elements: 1 - offset: 0x6DC
+	Prop: m_HookState - type: 0 - elements: 1 - offset: 0x6E0
+	Prop: m_attachedBoneIndex - type: 0 - elements: 1 - offset: 0x6E4
+	Prop: m_attachedStaticPosition - type: 2 - elements: 1 - offset: 0x6E8
+	Prop: m_attachedBoneAngle - type: 2 - elements: 1 - offset: 0x6F4
+	Prop: m_hAttachedEntity - type: 0 - elements: 1 - offset: 0x700
+	Prop: m_length - type: 1 - elements: 1 - offset: 0x704
+	Prop: m_bladePositionForManualAim - type: 2 - elements: 1 - offset: 0x708
+Table: DT_WeaponBlaster
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_WeaponBow
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_currentBowType - type: 0 - elements: 1 - offset: 0x6D8
+	Prop: m_flCycle - type: 0 - elements: 1 - offset: 0x0
+Table: DT_WeaponCarry
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_targetEntity - type: 0 - elements: 1 - offset: 0x6D4
+	Prop: m_isAttached - type: 0 - elements: 1 - offset: 0x6D8
+	Prop: m_carryType - type: 0 - elements: 1 - offset: 0x6DC
+Table: DT_WeaponCrossGun
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_flCycle - type: 0 - elements: 1 - offset: 0x0
+Table: DT_WeaponCubemap
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_WeaponCycler
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_WeaponDualBlade
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_WeaponDualLinker
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: LinkerHookState - type: 0 - elements: 1 - offset: 0x6D4
+	Prop: m_firstBullet - type: 0 - elements: 1 - offset: 0x6CC
+	Prop: m_secondBullet - type: 0 - elements: 1 - offset: 0x6D0
+Table: DT_WeaponDualSpear
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_WeaponDualSword
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_WeaponFishingRod
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_state - type: 0 - elements: 1 - offset: 0x710
+	Prop: m_float - type: 0 - elements: 1 - offset: 0x6CC
+Table: DT_WeaponFragThrower
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_WeaponGrappling
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: pTargetNPC - type: 0 - elements: 1 - offset: 0x6CC
+	Prop: pAttackTargetEntity - type: 0 - elements: 1 - offset: 0x6D0
+	Prop: isAttached - type: 0 - elements: 1 - offset: 0x6ED
+	Prop: m_isFinishMotion - type: 0 - elements: 1 - offset: 0x704
+Table: DT_WeaponHammer
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+Table: DT_WeaponHarpoon
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: pTargetFish - type: 0 - elements: 1 - offset: 0x7AC
+Table: DT_WeaponHeroesBase
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_materialGameData - type: 5 - elements: 1 - offset: 0x68C
+	Prop: virtualSequence - type: 0 - elements: 1 - offset: 0x6C0
+Table: DT_WeaponHookshot
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: hookState - type: 0 - elements: 1 - offset: 0x6CC
+	Prop: attachType - type: 0 - elements: 1 - offset: 0x6D0
+	Prop: usageType - type: 0 - elements: 1 - offset: 0x6D4
+	Prop: pTargetNPC - type: 0 - elements: 1 - offset: 0x790
+	Prop: pTargetProp - type: 0 - elements: 1 - offset: 0x794
+	Prop: pTargetPlayer - type: 0 - elements: 1 - offset: 0x798
+	Prop: length - type: 1 - elements: 1 - offset: 0x730
+	Prop: hook - type: 0 - elements: 1 - offset: 0x78C
+Table: DT_WeaponJavelin
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_projectile - type: 0 - elements: 1 - offset: 0x6CC
+Table: DT_WeaponLift
+	Prop: baseclass - type: 5 - elements: 1 - offset: 0x0
+	Prop: m_targetEntity - type: 0 - elements: 1 - offset: 0x6D4
+	Prop: m_isAttached - type: 0 - elements: 1 - offset: 0x6D8
+	Prop: m_liftObjHealth - ty

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rc_dll", "rc_dll.vcproj", "{2A9F98E8-EEF1-4972-851F-FA05BBE30B42}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rc_exe", "..\rc_exe\rc_exe.vcproj", "{6BAD8DA8-87D4-4035-8D1C-5D1FCC71521D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A9F98E8-EEF1-4972-851F-FA05BBE30B42}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2A9F98E8-EEF1-4972-851F-FA05BBE30B42}.Debug|Win32.Build.0 = Debug|Win32
+		{2A9F98E8-EEF1-4972-851F-FA05BBE30B42}.Release|Win32.ActiveCfg = Release|Win32
+		{2A9F98E8-EEF1-4972-851F-FA05BBE30B42}.Release|Win32.Build.0 = Release|Win32
+		{6BAD8DA8-87D4-4035-8D1C-5D1FCC71521D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6BAD8DA8-87D4-4035-8D1C-5D1FCC71521D}.Debug|Win32.Build.0 = Debug|Win32
+		{6BAD8DA8-87D4-4035-8D1C-5D1FCC71521D}.Release|Win32.ActiveCfg = Release|Win32
+		{6BAD8DA8-87D4-4035-8D1C-5D1FCC71521D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

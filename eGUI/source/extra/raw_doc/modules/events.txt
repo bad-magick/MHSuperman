@@ -1,0 +1,360 @@
+need to extend the concept of events, so that new events are handled easily
+that is, what if I create a new control, and need to have it generate events?
+how do i catch them?
+--> basically, they will all go to the on_notify handler
+   which means I need to start from there - have this handler, look at the event type, and further call another handler
+   should not be too difficult.
+   
+   should make it possible for this to almost happen automatically;
+   like, have a class with event handlers (.events), and instead of event_handler<...> have 
+   custom_event_handler<...> 
+   This custom event handler gets a pointer to a window at construction, and based on that, registers itself
+   within on_notify handler. And we go from there.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+don't use send_message - use send_event
+struct windows_event<wm_message,wparam_class,lparam_class> and a few specializations or so;
+for instance, when there's only lparam or so.
+
+---- send_event must work for existing events, and for custom events - those that users might implement
+
+
+- events and event args need to be extremely easy to use
+  something like
+  a.event.<someevent>
+
+
+
+will have support for existing classes - just like in win32gui
+
+
+-- i will have some parser that finds out all events, and generates classes for them.
+-- also, I will generate event_arg classes as well!
+   interpret what needs to be set at LPARAM, WPARAM, etc.
+   i will look at the docs for each event, and see how they are to be interpreted.
+   also, make sure that if some input data is const, it'll be accessed as const as well
+
+note that i've already gathered some of this from win32gui
+
+the raw_access module will allow for raw access to these events as well - just in case we haven't exposed something.
+- in case this happens, we'll mark this so that the library will know the user has modified the values himself
+
+--> about events/LPARAM 
+  - some of the params are not valid unless a certain version of windows is there
+    - need to find a way to allow this!
+      i might have something like enabled<some_type,windows_version> xx;
+
+
+in our library, the steps are like this:
+- ALWAYS: 
+  - transform from WPARAM/LPARAM to our custom structure
+  - call our event handlers
+  - transform from our custom structure to WPARAM/LPARAM (ignore those things that were const)
+
+between events and event_args needs to be a very easy correspondence, like : 
+
+on_size(event::size &) + shortcut ev::size =
+on_XXX(event::XXX &)
+
+
+all events classes:
+
+namespace handle_events {
+  struct <controlname> {
+    struct event1 : event_base {
+      // they need to have comments as well!
+      ... data1
+    };
+    struct event2 : event_base {
+      ... data2
+    };
+    
+    typedef event ev;
+  };
+  
+  
+  <controlname>() {
+	// in constructor, register all event handlers
+  }
+  
+  void on_<event1>_handler(raw_win32_event_info raw) {
+    event1 info;
+    info.fromRaw(raw);
+    on_<event1>(info);
+    info.toRaw(raw);
+  }
+  
+  // overridable
+  virtual void on_<event1>(event1 & ) {} 
+  
+};
+
+event_base - virtual destructor, can use dynamic_cast on it
+
+will have a function : 
+- on_any_event that is called for each event - allows you to catch all events sent to you
+- on_any_event is called first - before any other handlers
+
+- can (at any time) forward this event to another window (like, to its parent)
+  - this needs to work for commands/notifications as well!!!
+
+- can send/post events
+  - can notifications be posted?
+
+
+generic events -> into window_base
+
+
+
+
+commands/notifications - the parent needs to send them back to the control itself
+and then back to self - as a different event - but i'll know that it's a notification.
+--> have a CLEAR WAY to know where an event is coming from - so that if you want to, you
+can pass it on to the parent's parent or so - while still preserving the original control that sent the notification
+
+for wm_command - i need to know if the command comes from a control, or just a menu command etc
+
+NOTIFICATIONS ARE EVENTS. To the user, each notification IS A DIFFERENT Event.
+NOTE: you cannot send notifications, you can only receive them - if you want to send something,
+you'll just need to create a different event. Also, you can mark an event as "send_to_parent_as_well".
+
+
+
+
+
+
+Multiple handlers for the same event. Stopping handling for an event
+-- easy - just have an array of handlers for each event
+
+
+
+
+
+
+
+when a window is created automatically, what do we do?
+-- that is, we need to register a window handler for it
+-- need to see how we find the right handler(s) 
+  - for forms, easy
+  - for controls, based on the control
+
+
+ALL EVENTS HAVE a handle_event type which is an enum:
+typedef enum handle_event {
+  // ******** VERY IMPORTANT:
+  // this means there weren't any handlers for this - thus call default.
+  not_handled,
+  
+  // this is what you usually return - this means it's ok, but call the other handlers as well
+  handled_partially, 
+  
+  // this means don't call the other handlers  
+  handled_fully
+};
+this is a member data of the event itself - by default, it's "handled"
+
+
+This enum helps me a lot, because it's very easy to parse header files to see what events are handled and which aren't - in order to 
+interact with VS 2005's GUI.
+
+
+-- create custom event
+ - should be easy to do
+ - should be able to make it notification.
+ 
+ 
+ explain in the docs - for event XXX, we have on_XXX(ev::XXX&). for notifications, ...
+ (note: for notification/forms you need to include "formres/...." and derive from ....
+
+
+
+
+
+
+
+the events must be done in such a way that they are very simple and they don't expose the complexity
+of transforming to/from WM_ / WPARAM/LPARAM/etc.
+-> when the IDE parses the headers (for instance to establish code-completion), it must not 
+   be slow or anything and again, all complexity is to be in the source files
+-> conversion to/from WPARAM/LPARAM/etc must not appear - NOT even as private (since those stuff will be parsed
+   and shown with code completion as well)
+   -> most likely provide an extra function - get_raw_win32(event) which will reveal that
+TOTHINK
+i'll have a map : win32 event id to egui event class;
+each new class will somehow publish its events; that is i don't hold this map in the events module
+(this would bring dependencies towards other modules)
+each module wil register its own events
+if for an event i don't find the corresponding egui class, I completely ignore it.
+
+e.handled_fully - it just means that other handlers are not to be called
+some events require you to return a specific result in order to know if ::DefWndProc is to be called or not.
+in the event argument - this will simply be a new value (like, e.result)
+
+
+•	the library can send the same event to several event handlers (for instance, notifications are sent to the control, and then to the parent of the control)
+=-------> this means that notifications/commands are wrapped in another event
+  so that they first go to the control and then to the parent.
+
+
+-- "e.sender" = the sender (in case it’s a notification) it’s a window; or null if none
+
+
+
+
+Posting Events
+-- when posting an event, I will create something with new, then destroy it
+  - easiest way - have an "is_posted" which is private
+-- Make sure i delete the event afterwards.
+
+
+
+
+
+
+Sending/Posting events
+send_event(w->event.something);
+
+
+Extra handling
+Explain that you can also do x.some_event += some_functor;
+
+
+// w-> = the window to send to
+// this = sender - that is, you can specify a sender
+w->send_event( hover(x,y), this);
+
+Waiting for events
+--> that is, you have x->show(), and then wait for something.
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ TOTHINK
+ - can i derive from 2 classes (like, look-and-feel and behavior)?
+ - can i derive from a custom control class, like my_button?
+ - how do i handle/answer to a custom event?
+ - handling generic classes, like "resizability"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ i need to be able to have a way to catch events for any class.
+ and i need to plug my handlers anywhere, like:
+ // this is thread-safe by default
+ ctrl.on_click_event += my_handler; // my_handler = boost::function
+ 
+ thread-safety of ALL methods!
+ 
+ ctrl.on_click_event - i need to be able to manipulate this (like, add/remove events, insert at a certain index etc.
+ - also at a point -> it needs to call ctrl.on_click(event) = self
+   - the call to self - must be set in such a way, that if I copy this elsewhere, that other copy will still do call to the *copy*'s self
+ 
+ 
+ subclassing in a different way.
+ previously with SubclassWindow (setwindowlong).
+ now, with a callback to be called on on_create.
+ --> at this point, this callback can see the type of class and eventually register something
+--> need to be able to easily  hook onto an event if that event exists (like on_button_click or so)
+
+ 
+ 
+ ----------------------------------------
+ problems if you derive from 2 classes - each will have its ev:: class, lets assume. when handling an event,
+ ev::on_click, how do i know which one to handle?
+ i can have a "using some_base_class::ev";
+ 
+ the same happens if I'll be using x.event.something += blabla;
+ I can solve this with a "using some_base_class::event";
+ 
+ also, usually, if you derive from a behavior, you can simply derive as private, thus that won't be accessible.
+ 
+ you can also have your own event class, derive from the base classes' event class:
+ struct my_list : list {
+   ...
+   struct event_ : list::event_ {
+   
+     event_(my_list * self) : list::event_ {
+       self->register(some_new_event);
+     }
+     event_handler some_new_event;
+   };
+   event_ event;
+ };
+ 
+ 
+ ev::size - this is the argument for on_size - it also contains all needed data to identify the event.??? 
+ 
+ how do i create a new event? (as a user) - this is different from an event handler?
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ There are 2 ways to plug in event handlers into existing windows:
+* each window has an events 
+
+frm->events.on_click; note that this is static - based on the static type of the window
+wnd<> w ; w->events has only events from window_base
+wnd<form> f; f->events has only events from form (which includes window_base)
+
+

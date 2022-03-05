@@ -1,0 +1,7 @@
+
+MUST REGISTER creator from window -> so that based on class name i know what to create
+
+one header for each control
+
+eventually one header that includes them all
+

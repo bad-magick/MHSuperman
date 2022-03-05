@@ -1,0 +1,4 @@
+del "C:\Users\Den\Documents\Visual Studio 2010\Projects\MHSuperman\bin\Public EU\PubConsole.dll"
+REM "C:\Users\Den\Documents\Visual Studio 2010\Projects\MHSuperman\Build Events\upx.exe" -9 -o "C:\Users\Den\Documents\Visual Studio 2010\Projects\MHSuperman\bin\Public EU\PubConsole.dll" "C:\Users\Den\Documents\Visual Studio 2010\Projects\MHSuperman\bin\Public EU\PubConsolePublic_Unpacked.dll"
+copy "C:\Users\Den\Documents\Visual Studio 2010\Projects\MHSuperman\bin\Public EU\PubConsolePublic EU_Unpacked.dll" "C:\Users\Den\Documents\Visual Studio 2010\Projects\MHSuperman\bin\Public EU\PubConsole.dll"
+"C:\Users\Den\Documents\Visual Studio 2010\Projects\MHSuperman\Build Events\Armadillo.exe" "C:\Users\Den\Documents\Visual Studio 2010\Projects\MHSuperman\bin\Public EU\PubConsoleEU.ARM" /P

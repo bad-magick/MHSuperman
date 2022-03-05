@@ -1,0 +1,40 @@
+Directory structure:
+root = egui/
+
+- if a header is needed by clients of the lib, indirectly, included by one of the 
+  public headers, it will be found in:
+  egui/core/detail/ 
+  - if needed by core, or by multiple unrelated modules
+  egui/<modulename>/detail/ 
+  - if needed by a specific module, and optionally by other modules that DEPEND on this module
+  egui/source/core/detail
+  - if needed by the core IMPLEMENTATION
+  egui/source/<modulename>/impl 
+  - if needed by a specific module
+
+
+
+- Each module is found in its own directory:
+  egui/<modulename> - the include files
+  egui/source/<modulename> - the source files
+
+In the source:
+- we have a header that automatically turns on "IMPL" details
+  this is defined in all impl files (like, a egui/source/core/detail/fwd.hpp or so)
+
+IMPORTANT:
+the user can choose to link against the lib, or simply include its files toghether with the project
+it'll still work
+
+
+--------------------------
+
+each module has its own namespace!
+
+--------------------------
+TOP DIRS:
+<modulename> - all modules
+source - the source files
+source/extra - extra files, like tests/samples
+
+

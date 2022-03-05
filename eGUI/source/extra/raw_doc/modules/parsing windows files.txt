@@ -1,0 +1,64 @@
+I will parse windows files:
+- have a list of directories to include
+- I will follow includes
+- I will make sure an include is followed only once
+
+Logging
+- log which file includes which, at what line
+- allow for certain headers to be ignored
+- say when some new definition is added or ignored (already there) - and in what file/line
+
+I will have rules for reading defines:
+- first, parsing all defines :
+- allow solving a define
+  #define x y
+  #define y 5
+  thus, x becomes 5
+  - solving a define only at the point when it's needed
+
+I will have config files:
+- say which file(s) to parse, and which to ignore
+- say where to output results
+- for each "rule" -> say the destination file
+  like : RBBS_* -> egui::rebar::style -> controls/rebar.hpp
+
+Matching patterns:
+- everything is lower cased
+- we're case-insensitive - in the end, all is lower cased
+- prefix is ignored; for instance: RBBS_* ignore "RBBS_"
+- I can add extra rules for generating the resulting name
+  example:
+
+  names(child,always)
+  in the above case, if some name contains any of the above words, they will be emphasized, by separating them from the rest of the text:
+  RBBS_CHILDEDGE | RBBS_GRIPPERALWAYS -> child_edge and gripper_always
+
+  rename(n1,n2)
+  n1 will be replaced by n2
+  rename(childedge,c_edge)
+  in the above case, RBBS_CHILDEDGE -> c_edge
+
+
+
+
+
+Outputting results:
+- the results are to be outputted into *existing* files
+- when specifying a rule :: delimit namespace and classes and structs (
+  - NOTE: watch out for { and }
+  - also, watch for class declarations - to be ignored
+  - whenever { is met, and we don't need it, ignore all up to }
+  - we could have {} on same line!
+  - {} are to be ignored if within literals 
+- when inserting the code
+  - if class is found, delete its implementation, and replace it with the new one
+  - if class not found, add it as close to the top as possible - in other words, for "egui::rebar::style",
+    I'll add it within the definition of "egui::rebar"
+  - before inserting, check to see if the code is already there: check what's there with what we'd insert - if same , ignore (don't do any insert)
+  - add a comment "// auto-generated from header:line"
+  - for each constant/function - make it one-liner when possible; 
+  - saving: only if I've added something new - we don't want to touch the files too many times
+
+- if class already exists : don't modify its name (for instance, it could derive from some other classes, we dont' want that info to be lost)
+
+exmple

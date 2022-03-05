@@ -1,0 +1,29 @@
+
+
+-- when refering to children - have functions like raw_child(idx) - to symbolize that you should use something else to get access to children
+
+-- this needs to be very friendly and dependent on the current form
+   - should it be accessible in the exterior - I think not - eventually if you want that, just provide your own custom member function
+
+
+http://msdn.microsoft.com/msdnmag/issues/07/12/WindowsCPP/
+
+
+windows:
+
+window - basic concept, just properties, on_create/on_destroy, etc
+
+- form : a form, that holds controls (derives from handle_events::form)
+- control : basic widget (might derive from handle_events::control, if there is such a thing)
+  - label : control, handle_events::label { ... }
+  - ...
+  
+  
+  
+  
+  
+  
+explain that the fact that we register the handlers is constructor is way too fast etc
+no need to worry about speed at this point - that is, we're c++ - so we're fast anyway
+compared to the time it takes to draw windows, what we're doing is child's play.
+  

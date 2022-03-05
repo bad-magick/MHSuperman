@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{e28329d8-49f0-4476-a7f8-045aa36250d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="detail">
+      <UniqueIdentifier>{76e78fb8-621c-4fdf-ba0a-3d5f8c0e1619}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{83f24a8d-b0d3-4f93-84b0-00a9aa38ef60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="w">
+      <UniqueIdentifier>{32f250c2-c2f1-45d1-b990-389e3516840a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\events\event_constructors.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\events\init_events.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="detail\convert.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\event_base.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\fwd.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="wnd.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx_events.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\template.hpp">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="all.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="animate_ctrl.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="button.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="check_box.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="combo_box.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="date_time.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="edit.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="group_box.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="label.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="list.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="list_box.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="list_header.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="month_cal.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="multi_edit.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="progress_bar.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="radio_button.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="rebar.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="scroll_bar.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="slider.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="spin_button.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="status_bar.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="tab.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="tab_form.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="template.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="toolbar.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="tooltip.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="tree.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+    <ClInclude Include="window_top.hpp">
+      <Filter>w</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

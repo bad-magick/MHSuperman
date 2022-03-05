@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="controls">
+      <UniqueIdentifier>{c38789e5-d99f-443c-b403-0c1bfb6fd73c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="detail">
+      <UniqueIdentifier>{b08e3f89-d6dc-4f15-a7ee-10905b725d4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="detail\std">
+      <UniqueIdentifier>{594c8c19-718c-465b-a51f-737fb77d1d2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{c5b8aaf3-c4b0-459c-adaa-9d5a4eda3380}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="all.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="animate_ctrl.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="button.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="check_box.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="combo_box.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="date_time.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="edit.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="group_box.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="label.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="list.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="list_box.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="list_header.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="month_cal.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="multi_edit.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="progress_bar.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="radio_button.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="rebar.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="scroll_bar.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="slider.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="spin_button.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="status_bar.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="tab.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="tab_form.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="toolbar.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="tooltip.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="tree.hpp">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\fwd.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\get_item_ex.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\handle_event_base.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detail\template.hpp">
+      <Filter>detail</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx_controls.h">
+      <Filter>detail\std</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>detail\std</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\animate_ctrl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\button.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\check_box.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\combo_box.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\control_base.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\date_time.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\edit.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\group_box.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\label.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\list.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\list_box.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\list_header.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\month_cal.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\multi_edit.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\progress_bar.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\radio_button.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\rebar.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\scroll_bar.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\slider.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\spin_button.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\status_bar.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\tab.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\tab_form.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\toolbar.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\tooltip.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\controls\tree.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

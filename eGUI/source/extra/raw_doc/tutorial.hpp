@@ -1,0 +1,200 @@
+namespace egui {
+
+/** 
+@page tutorial [Tutorial] eGUI++ - Easy GUI
+
+- @ref tutorial_motivation 
+- @ref tutorial_installation 
+- @ref tutorial_boost 
+- @ref tutorial_windows 
+- @ref tutorial_usd_to_eur 
+- @ref tutorial_controls 
+- @ref tutorial_forms 
+- @ref tutorial_events 
+- @ref tutorial_devel 
+- @ref tutorial_volunteer 
+
+
+
+
+@section tutorial_motivation Motivation 
+
+Yes, I've written eGUI to finally have a GUI lib that is straightforward, both to read, and write.
+
+My goals:
+- make GUI code easy to read
+- make GUI code easy to write
+- benefit from code completion whenever possible
+- make GUI programming safe 
+    - in case there’s an error, catch it at compile time whenever possible; otherwise, at runtime, an exception is thrown
+- Resource Editor friendly
+    - Integration with VS 2005+ Resource Editor
+- no message maps
+- No need to #include <windows.h> in client code. This was quite bold, but I've made it.
+  You want a library that abstracts away the Win32 API FULLY, here it is.
+
+
+@section tutorial_installation Installation
+
+Go to your install directory, and follow the instructions there.
+Why install? So that you'll benefit from the integration of eGUI with VC2005.
+
+
+@section tutorial_boost Based on Boost
+
+Yes, Boost (www.boost.org) is quite a cool collection of libs, so why reinvent the wheel. I've used some of their libs
+- rest assured, I've used only head-only libs, so no extra .lib dependencies there
+
+
+@section tutorial_windows Windows
+
+Dealing with windows is quite simple:
+- always use <tt>wnd< [window_name] > </tt> to refer to a window. Think of it as a smart pointer to the window
+- there's a 1-to-1 correspondence c++-object to on-the-screen-window. If the user closes the window, its corresponding
+  c++ object becomes invalid (it's marked for destruction)
+- creating windows is very easy. Normally, you'll use forms (see below), but just in case you want to create the window yourself,
+  the syntax is:
+  @code
+  // 1
+  wnd<> w = new_<some_wnd>( [args]);
+
+  // 2
+  wnd<some_wnd> = new_( [args]);
+  @endcode
+
+  Methods 1 and 2 are same.
+
+
+@section tutorial_usd_to_eur Case in point : USD to EUR conversion
+
+You'll find the sample in samples/tutorial/usd_to_eur.
+
+To deal with the GUI world, you create @em forms (or dialogs, if you wish).
+Then you put controls on them, and the handle some of their events to implement the logic.
+
+1st. The main() function:
+
+@code
+using namespace egui;
+void egui::main(const main_args&) {
+    // create a modal form. You don't need to specifically wait for an event from the modal form,
+    // since you'll exit this function only when it's ready
+    wnd<convert>( new_( wnd_init().style(form_style::modal) ));
+}
+@endcode
+
+2nd. The convert class - it's the form that does the conversion. It's fairly simple
+
+2A. The convert header
+
+@code
+// convert.h
+#pragma once
+#include "convert_form_resource.h"
+struct convert :   form_resource::convert {
+    convert() : rate(1.47), updating(false) {}
+private:
+    
+    double rate;
+    bool updating;
+
+    // here we specified what notifications we're handling:
+    // the "change" event, coming from usd, and from eur controls
+    void on_change(edit::ev::change&, usd_);
+    void on_change(edit::ev::change&, eur_);
+};
+@endcode
+
+2B. The convert source
+
+@code
+// convert.cpp
+#include "stdafx.h"
+#include "convert.h"
+#include "convert_form_resource.h.hpp"
+namespace {
+    double to_double(const string& str) { ... }
+    string to_string(double d) { ... }
+}
+
+// handle each event, and update the other control
+// also, avoid infinite recursion
+void convert::on_change(edit::ev::change&, usd_) {
+    if ( updating) return;
+    updating = true;
+    eur->text = to_string( to_double(usd->text) / rate);
+    updating = false;
+}
+void convert::on_change(edit::ev::change&, eur_) { 
+    if ( updating) return;
+    updating = true;
+    usd->text = to_string( to_double(eur->text) * rate);
+    updating = false;
+}
+
+@endcode
+
+
+@section tutorial_controls Where are the controls defined?
+
+You see in code that I'm using 'usd' and 'eur', but they're not defined anywhere.
+That's right - eGUI takes care of that for you (throgh the magic of "..._form_resource.h[.hpp]" files
+generated automatically.
+
+What just need to use the eGUI wizard to generate a form class. Then eGUI will take care of the extra _form_resource.* files.
+It will also map whatever controls are on the form (you edited with the Resource Editor) to C++ classes.
+
+Like, in the above case it mapped 'usd' to the editbox corresponding to the USD sum, and 'eur' to the editbox corresponding to the EUR sum.
+
+
+
+@section tutorial_forms Forms
+
+eGUI encourages form programmming. That is, you create forms, put controls on them (which eGUI manages automatically)
+Just remember, when you create the C++ form class corresponding to a Dialog you edited with Resource Editor,
+use the eGUI Wizard to add the class.
+
+
+
+@section tutorial_events Events
+
+Events/Notifications is where eGUI really shines. It's very simple:
+- the events generated by each control, are in "<control>::ev" (use code-completion to find them).
+- event handlers are called "on_"<event> (where <event> is the name of the event from <control>::ev
+
+For instance, edit has a few notifications: <tt>edit::ev::change, edit::ev::update</tt>, etc.
+Their corresponding handler names are 
+- void on_change(edit::ev::change&);
+- void on_update(edit::ev::update&);
+
+
+It's really easy for a form to handle events coming from its children:
+- the child name is the name you assigned to the control on the Resource Editor, with the ID*_ prefix.
+  For instance, if on Resource Editor is called IDC_username, in code it will be called 'username'
+- if you know the name of the event, and what control is generating it, you'll know what to override.
+  Say you're waiting for 'update', from 'usd'. The event handler name is:
+  void on_update(edit::ev::update& e,usd_);
+- to see what you can do with an event (its arguments), just type "e.", and code-completion will help
+
+Every event has at least the following info:
+- .sender - the one who sent this event (it can be different from the receiver). For instance,
+  you can forward an event to somebody else.
+
+
+
+@section tutorial_devel Development
+
+At this time, the library is under development, by an army of one (me). It's in alpha state (at the time of writing, 2 June 2008), 
+even though knowing that I've developed
+anther GUI lib 2 years ago, I'd say this will get stable quite quickly.
+
+
+
+@section tutorial_volunteer Volunteers
+
+There's plenty of possible improvement, so if you'd like to contribute/test, your help is most welcome! 
+Just drop me an email - you know where to find me ;)
+
+*/
+
+}

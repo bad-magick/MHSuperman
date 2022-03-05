@@ -1,0 +1,7 @@
+
+one header for each control
+
+eventually one header that includes them all
+
+
+-- this includes the controls from VC 2008 (v9 from MFC)

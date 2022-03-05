@@ -1,0 +1,12 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="egui::wnd_init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="m_rect",fontname="FreeSans.ttf"];
+  Node2 [label="egui::types::rectangle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structegui_1_1types_1_1rectangle.html",tooltip="Contains a rectangle."];
+  Node3 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="start",fontname="FreeSans.ttf"];
+  Node3 [label="egui::types::point",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structegui_1_1types_1_1point.html",tooltip="point"];
+  Node4 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="size",fontname="FreeSans.ttf"];
+  Node4 [label="egui::types::size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structegui_1_1types_1_1size.html",tooltip="contains a size (width and height)"];
+}
